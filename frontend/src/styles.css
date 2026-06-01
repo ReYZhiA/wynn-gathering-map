@@ -222,6 +222,65 @@ legend {
   margin: 0;
 }
 
+.cluster-result-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.cluster-result {
+  align-items: center;
+  background: #111827;
+  border-color: #334155;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  padding: 0.65rem;
+  text-align: left;
+  width: 100%;
+}
+
+.cluster-result:hover,
+.cluster-result.is-selected {
+  border-color: #7dd3fc;
+  background: #162033;
+}
+
+.cluster-rank,
+.cluster-score span,
+.cluster-main span {
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.cluster-main {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.cluster-main strong,
+.cluster-main span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cluster-score {
+  display: grid;
+  gap: 0.15rem;
+  justify-items: end;
+  min-width: 62px;
+}
+
+.cluster-score strong {
+  color: #f8fafc;
+}
+
+.live-cluster-controls {
+  border-top: 1px solid #334155;
+  padding-top: 1rem;
+}
+
 @media (max-width: 860px) {
   .app-layout {
     grid-template-columns: 1fr;

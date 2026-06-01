@@ -43,6 +43,7 @@ export type DebugCoordinateState = {
 };
 
 const HIT_RADIUS = 10;
+const NODE_DETAIL_ZOOM = 0.55;
 
 export function MapCanvas({
   nodes,
@@ -122,6 +123,7 @@ export function MapCanvas({
 
   const findNodeAt = useCallback(
     (screenPoint: ScreenPoint): GatheringNode | null => {
+      if (showClusters && clusters.length > 0 && viewport.zoom < NODE_DETAIL_ZOOM) return null;
       for (let index = nodes.length - 1; index >= 0; index -= 1) {
         const node = nodes[index];
         const imagePoint = worldToImage({ x: node.x, z: node.z }, calibration);
@@ -136,7 +138,7 @@ export function MapCanvas({
       }
       return null;
     },
-    [calibration, imageToScreen, nodes],
+    [calibration, clusters.length, imageToScreen, nodes, showClusters, viewport.zoom],
   );
 
   const findTerritoryAt = useCallback(
@@ -167,6 +169,9 @@ export function MapCanvas({
           imageToScreen(worldToImage({ x: point.x, z: point.z }, calibration)),
         );
         if (points.length === 1 && distance(screenPoint, points[0]) <= HIT_RADIUS) {
+          return cluster;
+        }
+        if (points.length > 2 && pointInPolygon(screenPoint, points)) {
           return cluster;
         }
         for (let pointIndex = 0; pointIndex < points.length - 1; pointIndex += 1) {
@@ -231,17 +236,20 @@ export function MapCanvas({
         calibration,
         imageToScreen,
         highlightedCluster: activeCluster,
+        zoom: viewport.zoom,
       });
     }
 
-    drawGatheringNodeOverlay({
-      context,
-      nodes,
-      calibration,
-      imageToScreen,
-      zoom: viewport.zoom,
-      highlightedNode: activeNode,
-    });
+    if (!showClusters || clusters.length === 0 || viewport.zoom >= NODE_DETAIL_ZOOM) {
+      drawGatheringNodeOverlay({
+        context,
+        nodes,
+        calibration,
+        imageToScreen,
+        zoom: viewport.zoom,
+        highlightedNode: activeNode,
+      });
+    }
   }, [
     activeCluster,
     activeNode,
@@ -406,4 +414,17 @@ function distanceToSegment(point: ScreenPoint, start: ScreenPoint, end: ScreenPo
     Math.min(1, ((point.x - start.x) * dx + (point.y - start.y) * dy) / (dx * dx + dy * dy)),
   );
   return distance(point, { x: start.x + t * dx, y: start.y + t * dy });
+}
+
+function pointInPolygon(point: ScreenPoint, polygon: ScreenPoint[]): boolean {
+  let inside = false;
+  for (let index = 0, previousIndex = polygon.length - 1; index < polygon.length; previousIndex = index, index += 1) {
+    const current = polygon[index];
+    const previous = polygon[previousIndex];
+    const intersects =
+      current.y > point.y !== previous.y > point.y &&
+      point.x < ((previous.x - current.x) * (point.y - current.y)) / (previous.y - current.y) + current.x;
+    if (intersects) inside = !inside;
+  }
+  return inside;
 }

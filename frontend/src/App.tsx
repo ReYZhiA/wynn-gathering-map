@@ -4,7 +4,7 @@ import { fetchGatheringNodes } from "./api/gatheringNodesApi";
 import { fetchNodeClusters } from "./api/nodeClustersApi";
 import { fetchTerritories } from "./api/territoriesApi";
 import { USE_STATIC_DATA } from "./api/config";
-import { ClusterControlPanel } from "./components/ClusterControlPanel";
+import { ClusterResultsPanel, LiveClusterControls } from "./components/ClusterResultsPanel";
 import { DebugCoordinatePanel } from "./components/DebugCoordinatePanel";
 import {
   DEFAULT_FILTERS,
@@ -12,6 +12,7 @@ import {
   GatheringNodeFilterPanel,
 } from "./components/GatheringNodeFilterPanel";
 import { MapCanvas, type DebugCoordinateState } from "./map/MapCanvas";
+import { analyzeClusters } from "./map/clusterAnalysis";
 import { getGatheringProfession } from "./map/resourceStyles";
 import type { GatheringNode, GatheringNodeFilters, GatheringNodesResponse } from "./types/gatheringNode";
 import type { ClusterSettings, NodeCluster } from "./types/nodeCluster";
@@ -27,7 +28,7 @@ const EMPTY_DEBUG: DebugCoordinateState = {
 
 const DEFAULT_CLUSTER_SETTINGS: ClusterSettings = {
   showTerritories: true,
-  showClusters: false,
+  showClusters: USE_STATIC_DATA,
   eps: 90,
   minSamples: 3,
   byResource: true,
@@ -49,6 +50,7 @@ export function App() {
     useState<ClusterSettings>(DEFAULT_CLUSTER_SETTINGS);
   const [debugEnabled, setDebugEnabled] = useState(false);
   const [debug, setDebug] = useState<DebugCoordinateState>(EMPTY_DEBUG);
+  const [showLiveClusterControls, setShowLiveClusterControls] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isClusterLoading, setIsClusterLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -155,6 +157,11 @@ export function App() {
     [clusters, filters.professions],
   );
 
+  const clusterAnalyses = useMemo(
+    () => analyzeClusters(visibleClusters, nodesWithCurrentClusterIds),
+    [nodesWithCurrentClusterIds, visibleClusters],
+  );
+
   const selectedTerritoryFromFilter = useMemo(
     () => territories.find((territory) => territory.name === filters.territory) ?? selectedTerritory,
     [filters.territory, selectedTerritory, territories],
@@ -205,16 +212,35 @@ export function App() {
             setSelectedTerritory(null);
           }}
         />
-        <ClusterControlPanel
-          draftSettings={draftClusterSettings}
-          appliedSettings={appliedClusterSettings}
-          clusterCount={visibleClusters.length}
+        <ClusterResultsPanel
+          analyses={clusterAnalyses}
+          selectedClusterId={selectedCluster?.id ?? null}
+          showClusters={draftClusterSettings.showClusters}
+          showTerritories={draftClusterSettings.showTerritories}
           isLoading={isClusterLoading}
           error={clusterError}
           isStaticData={USE_STATIC_DATA}
-          onDraftChange={setDraftClusterSettings}
-          onApply={() => setAppliedClusterSettings(draftClusterSettings)}
+          onShowClustersChange={(showClusters) =>
+            setDraftClusterSettings((current) => ({ ...current, showClusters }))
+          }
+          onShowTerritoriesChange={(showTerritories) =>
+            setDraftClusterSettings((current) => ({ ...current, showTerritories }))
+          }
+          onSelectCluster={(clusterId) => {
+            setSelectedCluster(visibleClusters.find((cluster) => cluster.id === clusterId) ?? null);
+            setSelectedNode(null);
+            setSelectedTerritory(null);
+          }}
+          onOpenLiveControls={USE_STATIC_DATA ? null : () => setShowLiveClusterControls((show) => !show)}
         />
+        {!USE_STATIC_DATA && showLiveClusterControls ? (
+          <LiveClusterControls
+            draftSettings={draftClusterSettings}
+            appliedSettings={appliedClusterSettings}
+            onDraftChange={setDraftClusterSettings}
+            onApply={() => setAppliedClusterSettings(draftClusterSettings)}
+          />
+        ) : null}
         <DebugCoordinatePanel
           enabled={debugEnabled}
           debug={debug}
