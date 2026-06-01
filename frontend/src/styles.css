@@ -12,8 +12,14 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   min-width: 320px;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
 }
 
 button,
@@ -74,7 +80,8 @@ legend {
 .app-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 
 .map-panel {
@@ -123,7 +130,9 @@ legend {
   display: grid;
   gap: 1rem;
   grid-auto-rows: min-content;
+  min-height: 0;
   overflow: auto;
+  overscroll-behavior: contain;
   padding: 1rem;
 }
 

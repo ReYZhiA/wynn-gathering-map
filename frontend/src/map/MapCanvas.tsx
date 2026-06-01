@@ -319,8 +319,22 @@ export function MapCanvas({
     );
   }, [activeCluster, calibration, imageToScreen]);
 
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const handleWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      const rect = canvas.getBoundingClientRect();
+      zoomAt({ x: event.clientX - rect.left, y: event.clientY - rect.top }, event.deltaY);
+    };
+
+    canvas.addEventListener("wheel", handleWheel, { passive: false });
+    return () => canvas.removeEventListener("wheel", handleWheel);
+  }, [zoomAt]);
+
   function getRelativePointer(
-    event: React.PointerEvent<HTMLCanvasElement> | React.WheelEvent<HTMLCanvasElement>,
+    event: React.PointerEvent<HTMLCanvasElement>,
   ): ScreenPoint {
     const rect = event.currentTarget.getBoundingClientRect();
     return { x: event.clientX - rect.left, y: event.clientY - rect.top };
@@ -373,10 +387,6 @@ export function MapCanvas({
           setHoveredCluster(null);
           setHoveredTerritory(null);
           setPointerScreen(null);
-        }}
-        onWheel={(event) => {
-          event.preventDefault();
-          zoomAt(getRelativePointer(event), event.deltaY);
         }}
       />
       <div className="map-actions">
