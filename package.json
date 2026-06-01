@@ -1,0 +1,21 @@
+{
+  "name": "wynn-gathering-map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && ${PYTHON_BIN:-python3} -m uvicorn app.main:app --reload",
+    "frontend": "npm --prefix frontend run dev",
+    "export:static": "cd backend && ${PYTHON_BIN:-python3} -m app.static_export --output ../frontend/public/data",
+    "build:static": "npm run export:static && VITE_STATIC_DATA=true npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "test": "cd backend && ${PYTHON_BIN:-python3} -m pytest"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
