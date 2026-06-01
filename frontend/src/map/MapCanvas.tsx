@@ -98,7 +98,7 @@ export function MapCanvas({
 
   useEffect(() => {
     const image = new Image();
-    image.src = "/assets/wynn-map.png";
+    image.src = `${import.meta.env.BASE_URL}assets/wynn-map.png`;
     image.onload = () => {
       imageRef.current = image;
       setImageSize({
