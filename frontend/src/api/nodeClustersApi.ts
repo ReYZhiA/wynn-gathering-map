@@ -31,6 +31,7 @@ export async function fetchNodeClusters(
   params.set("minSamples", String(settings.minSamples));
   params.set("byResource", String(settings.byResource));
   params.set("byTerritory", String(settings.byTerritory));
+  params.set("mode", settings.mode);
 
   const response = await fetch(`${API_BASE_URL}/api/node-clusters?${params.toString()}`);
   if (!response.ok) {

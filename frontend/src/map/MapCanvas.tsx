@@ -13,7 +13,7 @@ import {
   type MapCalibration,
   type ScreenPoint,
 } from "./coordinates";
-import { drawClusterOutlineOverlay } from "./ClusterOutlineOverlay";
+import { buildClusterDisplayOutline, drawClusterOutlineOverlay } from "./ClusterOutlineOverlay";
 import { drawGatheringNodeOverlay } from "./GatheringNodeOverlay";
 import { drawTerritoryOverlay } from "./TerritoryOverlay";
 import { useMapViewport } from "./useMapViewport";
@@ -175,24 +175,28 @@ export function MapCanvas({
         const points = cluster.outline.map((point) =>
           imageToScreen(worldToImage({ x: point.x, z: point.z }, calibration)),
         );
-        if (points.length === 1 && distance(screenPoint, points[0]) <= HIT_RADIUS) {
+        const hitPoints = buildClusterDisplayOutline(points, viewport.zoom);
+        if (hitPoints.length === 1 && distance(screenPoint, hitPoints[0]) <= HIT_RADIUS) {
           return cluster;
         }
-        if (points.length > 2 && pointInPolygon(screenPoint, points)) {
+        if (hitPoints.length > 2 && pointInPolygon(screenPoint, hitPoints)) {
           return cluster;
         }
-        for (let pointIndex = 0; pointIndex < points.length - 1; pointIndex += 1) {
-          if (distanceToSegment(screenPoint, points[pointIndex], points[pointIndex + 1]) <= HIT_RADIUS) {
+        for (let pointIndex = 0; pointIndex < hitPoints.length - 1; pointIndex += 1) {
+          if (distanceToSegment(screenPoint, hitPoints[pointIndex], hitPoints[pointIndex + 1]) <= HIT_RADIUS) {
             return cluster;
           }
         }
-        if (points.length > 2 && distanceToSegment(screenPoint, points[points.length - 1], points[0]) <= HIT_RADIUS) {
+        if (
+          hitPoints.length > 2 &&
+          distanceToSegment(screenPoint, hitPoints[hitPoints.length - 1], hitPoints[0]) <= HIT_RADIUS
+        ) {
           return cluster;
         }
       }
       return null;
     },
-    [calibration, clusters, imageToScreen],
+    [calibration, clusters, imageToScreen, viewport.zoom],
   );
 
   const draw = useCallback(() => {

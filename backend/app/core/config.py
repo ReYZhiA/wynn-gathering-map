@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     node_cluster_min_samples: int = Field(default=3, alias="NODE_CLUSTER_MIN_SAMPLES")
     node_cluster_by_resource: bool = Field(default=True, alias="NODE_CLUSTER_BY_RESOURCE")
     node_cluster_by_territory: bool = Field(default=False, alias="NODE_CLUSTER_BY_TERRITORY")
+    node_cluster_mode: str = Field(default="connected", alias="NODE_CLUSTER_MODE")
     node_cluster_cache_ttl_seconds: int = Field(default=300, alias="NODE_CLUSTER_CACHE_TTL_SECONDS")
     cors_origins: list[str] = [
         "http://localhost:5173",

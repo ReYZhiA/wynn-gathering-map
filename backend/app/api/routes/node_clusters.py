@@ -38,12 +38,14 @@ async def get_node_clusters(
     minSamples: int | None = Query(default=None, ge=1),
     byResource: bool | None = None,
     byTerritory: bool | None = None,
+    mode: str | None = Query(default=None, pattern="^(connected|dbscan)$"),
 ) -> NodeClustersResponse:
     options = ClusteringOptions(
         eps=eps if eps is not None else settings.node_cluster_eps,
         min_samples=minSamples if minSamples is not None else settings.node_cluster_min_samples,
         by_resource=byResource if byResource is not None else settings.node_cluster_by_resource,
         by_territory=byTerritory if byTerritory is not None else settings.node_cluster_by_territory,
+        mode=mode if mode is not None else settings.node_cluster_mode,
     )
     filters = NodeClusterFilters(
         resource=resource,
@@ -63,6 +65,7 @@ async def get_node_clusters(
             "minSamples": options.min_samples,
             "byResource": options.by_resource,
             "byTerritory": options.by_territory,
+            "mode": options.mode,
         },
         sort_keys=True,
     )
@@ -88,6 +91,7 @@ async def get_node_clusters(
             minSamples=options.min_samples,
             byResource=options.by_resource,
             byTerritory=options.by_territory,
+            mode=options.mode,
         ),
     )
     cluster_cache.set(cache_key, response)

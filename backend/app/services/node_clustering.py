@@ -13,6 +13,7 @@ class ClusteringOptions:
     min_samples: int
     by_resource: bool
     by_territory: bool
+    mode: str = "connected"
 
 
 @dataclass(frozen=True)
@@ -159,20 +160,14 @@ def build_node_clusters(
     for (resource_key, _level_key, territory_key), group_nodes in sorted(
         groups.items(), key=lambda item: str(item[0])
     ):
-        points = [(float(node.x), float(node.z)) for _, node in group_nodes]
-        labels = dbscan(points, eps=options.eps, min_samples=options.min_samples)
-        clustered_labels = sorted({label for label in labels if label >= 0})
-        cluster_candidates: list[list[tuple[int, EnrichedGatheringNode]]] = []
-        for label in clustered_labels:
-            cluster_candidates.append(
-                [
-                    (original_index, node)
-                    for label_index, (original_index, node) in enumerate(group_nodes)
-                    if labels[label_index] == label
-                ]
+        cluster_candidates = cluster_group_nodes(group_nodes, options)
+        if options.mode == "dbscan":
+            cluster_candidates = merge_cluster_candidates(
+                cluster_candidates,
+                merge_distance=options.eps * 1.5,
             )
 
-        for members in merge_cluster_candidates(cluster_candidates, merge_distance=options.eps * 1.5):
+        for members in cluster_candidates:
             member_points = [(float(node.x), float(node.z)) for _, node in members]
             resource_counts = Counter(node.resource for _, node in members)
             dominant_resource = resource_counts.most_common(1)[0][0]
@@ -180,7 +175,7 @@ def build_node_clusters(
                 NodeCluster(
                     id=next_cluster_id,
                     resource=resource_key,
-                    territory=territory_key,
+                    territory=territory_key or shared_member_territory(members),
                     nodeCount=len(members),
                     levelMin=min(node.level for _, node in members),
                     levelMax=max(node.level for _, node in members),
@@ -191,6 +186,34 @@ def build_node_clusters(
             )
             next_cluster_id += 1
     return clusters
+
+
+def shared_member_territory(members: list[tuple[int, EnrichedGatheringNode]]) -> str | None:
+    territories = {node.territory for _, node in members}
+    return territories.pop() if len(territories) == 1 and None not in territories else None
+
+
+def cluster_group_nodes(
+    group_nodes: list[tuple[int, EnrichedGatheringNode]],
+    options: ClusteringOptions,
+) -> list[list[tuple[int, EnrichedGatheringNode]]]:
+    points = [(float(node.x), float(node.z)) for _, node in group_nodes]
+    if options.mode == "dbscan":
+        labels = dbscan(points, eps=options.eps, min_samples=options.min_samples)
+        clustered_labels = sorted({label for label in labels if label >= 0})
+        return [
+            [
+                (original_index, node)
+                for label_index, (original_index, node) in enumerate(group_nodes)
+                if labels[label_index] == label
+            ]
+            for label in clustered_labels
+        ]
+    return [
+        [group_nodes[index] for index in component]
+        for component in distance_connected_components(points, eps=options.eps)
+        if len(component) >= options.min_samples
+    ]
 
 
 def gathering_profession_for_resource(resource: str) -> str:
@@ -403,6 +426,29 @@ def region_query(points: list[Point], point_index: int, eps: float) -> list[int]
         for index, point in enumerate(points)
         if hypot(point[0] - origin[0], point[1] - origin[1]) <= eps
     ]
+
+
+def distance_connected_components(points: list[Point], *, eps: float) -> list[list[int]]:
+    visited = [False] * len(points)
+    components: list[list[int]] = []
+    for start_index in range(len(points)):
+        if visited[start_index]:
+            continue
+        visited[start_index] = True
+        component = [start_index]
+        queue = [start_index]
+        cursor = 0
+        while cursor < len(queue):
+            point_index = queue[cursor]
+            for neighbor_index in region_query(points, point_index, eps):
+                if visited[neighbor_index]:
+                    continue
+                visited[neighbor_index] = True
+                queue.append(neighbor_index)
+                component.append(neighbor_index)
+            cursor += 1
+        components.append(component)
+    return components
 
 
 def compute_cluster_outline(points: list[Point]) -> list[ClusterOutlinePoint]:

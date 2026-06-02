@@ -6,7 +6,7 @@
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && ${PYTHON_BIN:-python3} -m uvicorn app.main:app --reload --host 0.0.0.0",
     "frontend": "npm --prefix frontend run dev",
-    "export:static": "cd backend && ${PYTHON_BIN:-python3} -m app.static_export --output ../frontend/public/data --eps 20 --min-samples 10 --by-resource true --by-territory false",
+    "export:static": "cd backend && ${PYTHON_BIN:-python3} -m app.static_export --output ../frontend/public/data --eps 20 --min-samples 10 --by-resource true --by-territory false --mode connected",
     "build:static": "npm run export:static && VITE_STATIC_DATA=true npm --prefix frontend run build",
     "build": "npm --prefix frontend run build",
     "preview": "npm --prefix frontend run preview",

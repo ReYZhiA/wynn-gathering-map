@@ -115,6 +115,7 @@ async def get_gathering_nodes(
                 min_samples=settings.node_cluster_min_samples,
                 by_resource=settings.node_cluster_by_resource,
                 by_territory=settings.node_cluster_by_territory,
+                mode=settings.node_cluster_mode,
             ),
         )
         enriched_nodes = assign_cluster_ids(enriched_nodes, clusters)

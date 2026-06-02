@@ -17,13 +17,17 @@ export function ClusterTooltip({ cluster, position }: ClusterTooltipProps) {
         <dt>Nodes</dt>
         <dd>{cluster.nodeCount}</dd>
         <dt>Resource</dt>
-        <dd>{cluster.resource ?? cluster.dominantResource}</dd>
+        <dd>{cluster.dominantResource}</dd>
         <dt>Levels</dt>
         <dd>
           {cluster.levelMin}-{cluster.levelMax}
         </dd>
-        <dt>Territory</dt>
-        <dd>{cluster.territory ?? "Mixed/none"}</dd>
+        {cluster.territory ? (
+          <>
+            <dt>Territory</dt>
+            <dd>{cluster.territory}</dd>
+          </>
+        ) : null}
       </dl>
     </div>
   );

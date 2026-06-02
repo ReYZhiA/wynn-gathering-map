@@ -28,6 +28,7 @@ class NodeClustersMeta(BaseModel):
     min_samples: int = Field(alias="minSamples")
     by_resource: bool = Field(alias="byResource")
     by_territory: bool = Field(alias="byTerritory")
+    mode: str
 
 
 class NodeClustersResponse(BaseModel):

@@ -1,16 +1,18 @@
 import type { ClusterSettings } from "../types/nodeCluster";
-import type { ClusterAnalysis } from "../map/clusterAnalysis";
+import type { ClusterAnalysis, ClusterScoreMode } from "../map/clusterAnalysis";
 
 type ClusterResultsPanelProps = {
   analyses: ClusterAnalysis[];
   selectedClusterId: number | null;
   showClusters: boolean;
   showTerritories: boolean;
+  scoreMode: ClusterScoreMode;
   isLoading: boolean;
   error: string | null;
   isStaticData: boolean;
   onShowClustersChange: (showClusters: boolean) => void;
   onShowTerritoriesChange: (showTerritories: boolean) => void;
+  onScoreModeChange: (scoreMode: ClusterScoreMode) => void;
   onSelectCluster: (clusterId: number) => void;
   onOpenLiveControls: (() => void) | null;
 };
@@ -20,11 +22,13 @@ export function ClusterResultsPanel({
   selectedClusterId,
   showClusters,
   showTerritories,
+  scoreMode,
   isLoading,
   error,
   isStaticData,
   onShowClustersChange,
   onShowTerritoriesChange,
+  onScoreModeChange,
   onSelectCluster,
   onOpenLiveControls,
 }: ClusterResultsPanelProps) {
@@ -62,6 +66,17 @@ export function ClusterResultsPanel({
         Show territories
       </label>
 
+      <label>
+        Score target
+        <select
+          value={scoreMode}
+          onChange={(event) => onScoreModeChange(event.target.value as ClusterScoreMode)}
+        >
+          <option value="4tick">4 tick</option>
+          <option value="3tick">3 tick</option>
+        </select>
+      </label>
+
       {isLoading ? <p className="panel-note">Loading cluster snapshot...</p> : null}
       {error ? <p className="panel-error">{error}</p> : null}
       {isStaticData ? (
@@ -82,15 +97,15 @@ export function ClusterResultsPanel({
           >
             <span className="cluster-rank">#{index + 1}</span>
             <span className="cluster-main">
-              <strong>{analysis.cluster.resource ?? analysis.cluster.dominantResource}</strong>
+              <strong>{analysis.cluster.dominantResource}</strong>
               <span>
                 {analysis.cluster.nodeCount} nodes · lvl {analysis.cluster.levelMin}-
                 {analysis.cluster.levelMax}
               </span>
-              <span>{analysis.cluster.territory ?? "Mixed / no territory"}</span>
+              {analysis.cluster.territory ? <span>{analysis.cluster.territory}</span> : null}
             </span>
             <span className="cluster-score">
-              <strong>{analysis.score.toFixed(1)}</strong>
+              <strong>{analysis.score.toFixed(1)}%</strong>
               <span>{analysis.averageSpacing.toFixed(0)}m spacing</span>
             </span>
           </button>
@@ -115,7 +130,8 @@ export function LiveClusterControls({
     draftSettings.eps !== appliedSettings.eps ||
     draftSettings.minSamples !== appliedSettings.minSamples ||
     draftSettings.byResource !== appliedSettings.byResource ||
-    draftSettings.byTerritory !== appliedSettings.byTerritory;
+    draftSettings.byTerritory !== appliedSettings.byTerritory ||
+    draftSettings.mode !== appliedSettings.mode;
 
   return (
     <section className="cluster-panel live-cluster-controls">
@@ -128,6 +144,19 @@ export function LiveClusterControls({
           Apply
         </button>
       </div>
+
+      <label>
+        Mode
+        <select
+          value={draftSettings.mode}
+          onChange={(event) =>
+            onDraftChange({ ...draftSettings, mode: event.target.value as typeof draftSettings.mode })
+          }
+        >
+          <option value="connected">Distance connected</option>
+          <option value="dbscan">DBSCAN</option>
+        </select>
+      </label>
 
       <label>
         Clustering radius

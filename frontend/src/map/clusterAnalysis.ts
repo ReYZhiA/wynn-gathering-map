@@ -9,27 +9,45 @@ export type ClusterAnalysis = {
   averageSpacing: number;
 };
 
+export type ClusterScoreMode = "4tick" | "3tick";
+
 export function analyzeClusters(
   clusters: NodeCluster[],
   nodes: GatheringNode[],
+  scoreMode: ClusterScoreMode,
 ): ClusterAnalysis[] {
-  return clusters
-    .map((cluster) => {
-      const memberNodes = cluster.nodeIndices
-        .map((nodeIndex) => nodes[nodeIndex])
-        .filter((node): node is GatheringNode => node !== undefined);
-      const area = Math.max(1, polygonArea(cluster.outline));
-      const density = cluster.nodeCount / area;
-      const averageSpacing = averageNearestNeighborDistance(memberNodes);
-      const spacingScore = averageSpacing > 0 ? cluster.nodeCount * 100 / averageSpacing : cluster.nodeCount * 100;
-      const densityScore = density * 100_000;
+  const analyses = clusters.map((cluster) => {
+    const memberNodes = cluster.nodeIndices
+      .map((nodeIndex) => nodes[nodeIndex])
+      .filter((node): node is GatheringNode => node !== undefined);
+    const area = Math.max(1, polygonArea(cluster.outline));
+    const density = cluster.nodeCount / area;
+    const averageSpacing = averageNearestNeighborDistance(memberNodes);
 
+    return {
+      cluster,
+      score: 0,
+      area,
+      density,
+      averageSpacing,
+    };
+  });
+  const nodeScoreCap = scoreMode === "4tick" ? 16 : 20;
+  const positiveSpacings = analyses
+    .map((analysis) => analysis.averageSpacing)
+    .filter((spacing) => spacing > 0);
+  const bestSpacing = positiveSpacings.length > 0 ? Math.min(...positiveSpacings) : 0;
+
+  return analyses
+    .map((analysis) => {
+      const nodeScore = (Math.min(analysis.cluster.nodeCount, nodeScoreCap) / nodeScoreCap) * 70;
+      const distanceScore =
+        analysis.averageSpacing > 0 && bestSpacing > 0
+          ? (bestSpacing / analysis.averageSpacing) * 30
+          : 30;
       return {
-        cluster,
-        score: Math.round((spacingScore + densityScore) * 10) / 10,
-        area,
-        density,
-        averageSpacing,
+        ...analysis,
+        score: Math.round(Math.min(100, nodeScore + distanceScore) * 10) / 10,
       };
     })
     .sort((a, b) => b.score - a.score || b.cluster.nodeCount - a.cluster.nodeCount);

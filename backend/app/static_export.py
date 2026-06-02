@@ -24,6 +24,7 @@ async def export_static_data(
     min_samples: int | None,
     by_resource: bool | None,
     by_territory: bool | None,
+    mode: str | None,
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -39,6 +40,7 @@ async def export_static_data(
         minSamples=min_samples,
         byResource=by_resource,
         byTerritory=by_territory,
+        mode=mode,
     )
 
     _dump_response(gathering_nodes, output_dir / "gathering-nodes.json")
@@ -70,6 +72,7 @@ def main() -> None:
     parser.add_argument("--min-samples", type=int, default=settings.node_cluster_min_samples)
     parser.add_argument("--by-resource", type=_optional_bool, default=settings.node_cluster_by_resource)
     parser.add_argument("--by-territory", type=_optional_bool, default=settings.node_cluster_by_territory)
+    parser.add_argument("--mode", choices=["connected", "dbscan"], default=settings.node_cluster_mode)
     args = parser.parse_args()
 
     asyncio.run(
@@ -79,6 +82,7 @@ def main() -> None:
             min_samples=args.min_samples,
             by_resource=args.by_resource,
             by_territory=args.by_territory,
+            mode=args.mode,
         )
     )
     print(f"Exported static data to {args.output.resolve()}")

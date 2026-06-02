@@ -12,7 +12,7 @@ import {
   GatheringNodeFilterPanel,
 } from "./components/GatheringNodeFilterPanel";
 import { MapCanvas, type DebugCoordinateState } from "./map/MapCanvas";
-import { analyzeClusters } from "./map/clusterAnalysis";
+import { analyzeClusters, type ClusterScoreMode } from "./map/clusterAnalysis";
 import { getGatheringProfession } from "./map/resourceStyles";
 import type { GatheringNode, GatheringNodeFilters, GatheringNodesResponse } from "./types/gatheringNode";
 import type { ClusterSettings, NodeCluster } from "./types/nodeCluster";
@@ -33,6 +33,7 @@ const DEFAULT_CLUSTER_SETTINGS: ClusterSettings = {
   minSamples: 3,
   byResource: true,
   byTerritory: false,
+  mode: "connected",
 };
 
 export function App() {
@@ -44,6 +45,7 @@ export function App() {
   const [selectedNode, setSelectedNode] = useState<GatheringNode | null>(null);
   const [selectedTerritory, setSelectedTerritory] = useState<Territory | null>(null);
   const [selectedCluster, setSelectedCluster] = useState<NodeCluster | null>(null);
+  const [clusterScoreMode, setClusterScoreMode] = useState<ClusterScoreMode>("4tick");
   const [draftClusterSettings, setDraftClusterSettings] =
     useState<ClusterSettings>(DEFAULT_CLUSTER_SETTINGS);
   const [appliedClusterSettings, setAppliedClusterSettings] =
@@ -158,8 +160,8 @@ export function App() {
   );
 
   const clusterAnalyses = useMemo(
-    () => analyzeClusters(visibleClusters, nodesWithCurrentClusterIds),
-    [nodesWithCurrentClusterIds, visibleClusters],
+    () => analyzeClusters(visibleClusters, nodesWithCurrentClusterIds, clusterScoreMode),
+    [clusterScoreMode, nodesWithCurrentClusterIds, visibleClusters],
   );
 
   const selectedTerritoryFromFilter = useMemo(
@@ -217,6 +219,7 @@ export function App() {
           selectedClusterId={selectedCluster?.id ?? null}
           showClusters={draftClusterSettings.showClusters}
           showTerritories={draftClusterSettings.showTerritories}
+          scoreMode={clusterScoreMode}
           isLoading={isClusterLoading}
           error={clusterError}
           isStaticData={USE_STATIC_DATA}
@@ -226,6 +229,7 @@ export function App() {
           onShowTerritoriesChange={(showTerritories) =>
             setDraftClusterSettings((current) => ({ ...current, showTerritories }))
           }
+          onScoreModeChange={setClusterScoreMode}
           onSelectCluster={(clusterId) => {
             setSelectedCluster(visibleClusters.find((cluster) => cluster.id === clusterId) ?? null);
             setSelectedNode(null);

@@ -23,8 +23,11 @@ export type NodeClustersResponse = {
     minSamples: number;
     byResource: boolean;
     byTerritory: boolean;
+    mode: ClusterMode;
   };
 };
+
+export type ClusterMode = "connected" | "dbscan";
 
 export type ClusterSettings = {
   showTerritories: boolean;
@@ -33,4 +36,5 @@ export type ClusterSettings = {
   minSamples: number;
   byResource: boolean;
   byTerritory: boolean;
+  mode: ClusterMode;
 };
