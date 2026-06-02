@@ -21,3 +21,10 @@ npm run test
 Use `PYTHON_BIN=/path/to/python` before the npm command if the backend dependencies are in a specific environment.
 
 Map calibration lives in `frontend/src/map/coordinates.ts`.
+
+Cluster defaults live in `backend/app/core/config.py`. For one-off exports:
+
+```bash
+cd backend
+python3 -m app.static_export --output ../frontend/public/data --eps 90 --min-samples 3 --by-resource true --by-territory false
+```

@@ -45,6 +45,11 @@ export type DebugCoordinateState = {
 const HIT_RADIUS = 10;
 const NODE_DETAIL_ZOOM = 0.55;
 
+type TouchGestureState = {
+  center: ScreenPoint;
+  distance: number;
+};
+
 export function MapCanvas({
   nodes,
   territories,
@@ -65,6 +70,8 @@ export function MapCanvas({
   const imageRef = useRef<HTMLImageElement | null>(null);
   const dragStartRef = useRef<ScreenPoint | null>(null);
   const didDragRef = useRef(false);
+  const activePointersRef = useRef(new Map<number, ScreenPoint>());
+  const touchGestureRef = useRef<TouchGestureState | null>(null);
   const [canvasSize, setCanvasSize] = useState({ width: 1, height: 1 });
   const [imageSize, setImageSize] = useState({
     width: DEFAULT_MAP_CALIBRATION.imageWidth,
@@ -74,7 +81,7 @@ export function MapCanvas({
   const [hoveredTerritory, setHoveredTerritory] = useState<Territory | null>(null);
   const [hoveredCluster, setHoveredCluster] = useState<NodeCluster | null>(null);
   const [pointerScreen, setPointerScreen] = useState<ScreenPoint | null>(null);
-  const { viewport, imageToScreen, screenToImage, panBy, zoomAt, reset } = useMapViewport();
+  const { viewport, imageToScreen, screenToImage, panBy, zoomAt, zoomByFactorAt, reset } = useMapViewport();
   const activeNode = hoveredNode ?? selectedNode;
   const activeTerritory = hoveredTerritory ?? selectedTerritory;
   const activeCluster = hoveredCluster ?? selectedCluster;
@@ -333,11 +340,28 @@ export function MapCanvas({
     return () => canvas.removeEventListener("wheel", handleWheel);
   }, [zoomAt]);
 
-  function getRelativePointer(
-    event: React.PointerEvent<HTMLCanvasElement>,
-  ): ScreenPoint {
+  function getRelativePointer(event: React.PointerEvent<HTMLCanvasElement>): ScreenPoint {
     const rect = event.currentTarget.getBoundingClientRect();
     return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  }
+
+  function getTouchGesture(): TouchGestureState | null {
+    const pointers = Array.from(activePointersRef.current.values());
+    if (pointers.length < 2) return null;
+    const [first, second] = pointers;
+    return {
+      center: {
+        x: (first.x + second.x) / 2,
+        y: (first.y + second.y) / 2,
+      },
+      distance: Math.max(1, distance(first, second)),
+    };
+  }
+
+  function clearHoverState() {
+    setHoveredNode(null);
+    setHoveredCluster(null);
+    setHoveredTerritory(null);
   }
 
   return (
@@ -347,12 +371,40 @@ export function MapCanvas({
         className="map-canvas"
         onPointerDown={(event) => {
           event.currentTarget.setPointerCapture(event.pointerId);
-          dragStartRef.current = getRelativePointer(event);
+          const screenPoint = getRelativePointer(event);
+          activePointersRef.current.set(event.pointerId, screenPoint);
+          if (activePointersRef.current.size >= 2) {
+            touchGestureRef.current = getTouchGesture();
+            dragStartRef.current = null;
+            didDragRef.current = true;
+            clearHoverState();
+            return;
+          }
+          dragStartRef.current = screenPoint;
           didDragRef.current = false;
         }}
         onPointerMove={(event) => {
           const screenPoint = getRelativePointer(event);
           setPointerScreen(screenPoint);
+          if (activePointersRef.current.has(event.pointerId)) {
+            activePointersRef.current.set(event.pointerId, screenPoint);
+          }
+          if (activePointersRef.current.size >= 2) {
+            const nextGesture = getTouchGesture();
+            const previousGesture = touchGestureRef.current;
+            if (nextGesture && previousGesture) {
+              panBy(
+                nextGesture.center.x - previousGesture.center.x,
+                nextGesture.center.y - previousGesture.center.y,
+              );
+              zoomByFactorAt(nextGesture.center, nextGesture.distance / previousGesture.distance);
+            }
+            touchGestureRef.current = nextGesture;
+            dragStartRef.current = null;
+            didDragRef.current = true;
+            clearHoverState();
+            return;
+          }
           if (dragStartRef.current) {
             panBy(screenPoint.x - dragStartRef.current.x, screenPoint.y - dragStartRef.current.y);
             dragStartRef.current = screenPoint;
@@ -371,6 +423,8 @@ export function MapCanvas({
           setHoveredTerritory(cluster || !showTerritories ? null : findTerritoryAt(screenPoint));
         }}
         onPointerUp={(event) => {
+          activePointersRef.current.delete(event.pointerId);
+          touchGestureRef.current = getTouchGesture();
           dragStartRef.current = null;
           if (didDragRef.current) return;
           const screenPoint = getRelativePointer(event);
@@ -381,11 +435,18 @@ export function MapCanvas({
           onSelectCluster(cluster);
           onSelectTerritory(territory);
         }}
-        onPointerLeave={() => {
+        onPointerCancel={(event) => {
+          activePointersRef.current.delete(event.pointerId);
+          touchGestureRef.current = getTouchGesture();
           dragStartRef.current = null;
-          setHoveredNode(null);
-          setHoveredCluster(null);
-          setHoveredTerritory(null);
+          didDragRef.current = true;
+          clearHoverState();
+        }}
+        onPointerLeave={() => {
+          activePointersRef.current.clear();
+          touchGestureRef.current = null;
+          dragStartRef.current = null;
+          clearHoverState();
           setPointerScreen(null);
         }}
       />

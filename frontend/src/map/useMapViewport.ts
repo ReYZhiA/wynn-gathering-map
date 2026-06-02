@@ -53,6 +53,20 @@ export function useMapViewport(initial: MapViewport = { panX: 0, panY: 0, zoom: 
     });
   }, []);
 
+  const zoomByFactorAt = useCallback((screenPoint: ScreenPoint, zoomFactor: number) => {
+    setViewport((current) => {
+      const nextZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, current.zoom * zoomFactor));
+      const imageX = (screenPoint.x - current.panX) / current.zoom;
+      const imageY = (screenPoint.y - current.panY) / current.zoom;
+
+      return {
+        zoom: nextZoom,
+        panX: screenPoint.x - imageX * nextZoom,
+        panY: screenPoint.y - imageY * nextZoom,
+      };
+    });
+  }, []);
+
   const reset = useCallback(() => setViewport(initial), [initial]);
 
   return {
@@ -61,6 +75,7 @@ export function useMapViewport(initial: MapViewport = { panX: 0, panY: 0, zoom: 
     screenToImage,
     panBy,
     zoomAt,
+    zoomByFactorAt,
     reset,
   };
 }
