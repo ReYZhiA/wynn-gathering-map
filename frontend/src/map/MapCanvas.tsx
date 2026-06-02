@@ -43,7 +43,7 @@ export type DebugCoordinateState = {
 };
 
 const HIT_RADIUS = 10;
-const NODE_DETAIL_ZOOM = 0.55;
+const NODE_DETAIL_ZOOM = 0.8;
 
 type TouchGestureState = {
   center: ScreenPoint;

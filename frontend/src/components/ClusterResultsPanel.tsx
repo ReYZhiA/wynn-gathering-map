@@ -162,7 +162,7 @@ export function LiveClusterControls({
             onDraftChange({ ...draftSettings, byResource: event.target.checked })
           }
         />
-        Cluster by resource
+        Cluster by gathering type + level
       </label>
 
       <label className="checkbox-label">

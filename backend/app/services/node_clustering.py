@@ -26,6 +26,77 @@ class NodeClusterFilters:
 
 Point = tuple[float, float]
 
+WOODCUTTING_RESOURCES = {
+    "OAK",
+    "BIRCH",
+    "WILLOW",
+    "ACACIA",
+    "SPRUCE",
+    "JUNGLE",
+    "DARK",
+    "DARK_OAK",
+    "LIGHT",
+    "LIGHT_OAK",
+    "PINE",
+    "AVO",
+    "SKY",
+    "MAPLE",
+    "REDWOOD",
+}
+
+MINING_RESOURCES = {
+    "COPPER",
+    "GRANITE",
+    "GOLD",
+    "SANDSTONE",
+    "IRON",
+    "SILVER",
+    "COBALT",
+    "KANDERSTONE",
+    "DIAMOND",
+    "VOIDSTONE",
+    "DERNIC",
+    "TITANIUM",
+    "CINNABAR",
+}
+
+FARMING_RESOURCES = {
+    "WHEAT",
+    "BARLEY",
+    "OAT",
+    "OATS",
+    "MALT",
+    "HOPS",
+    "RYE",
+    "MILLET",
+    "DECAY",
+    "DECAY_ROOT",
+    "RICE",
+    "SORGHUM",
+    "HEMP",
+    "JUTE",
+    "HEATHER",
+}
+
+FISHING_RESOURCES = {
+    "GUDGEON",
+    "TROUT",
+    "SALMON",
+    "CARP",
+    "ICEFISH",
+    "PIRANHA",
+    "KOI",
+    "GYLIA",
+    "GYLIA_FISH",
+    "BASS",
+    "MOLTEN",
+    "MOLTEN_EEL",
+    "SUNFISH",
+    "STARFISH",
+    "STURGEON",
+    "MAHSEER",
+}
+
 
 def enrich_nodes_with_territories(
     nodes: list[EnrichedGatheringNode],
@@ -73,24 +144,35 @@ def build_node_clusters(
     filters: NodeClusterFilters | None = None,
 ) -> list[NodeCluster]:
     filtered_nodes = apply_node_filters(nodes, filters or NodeClusterFilters())
-    groups: dict[tuple[str | None, str | None], list[tuple[int, EnrichedGatheringNode]]] = defaultdict(list)
+    groups: dict[
+        tuple[str | None, int | None, str | None],
+        list[tuple[int, EnrichedGatheringNode]],
+    ] = defaultdict(list)
     for index, node in filtered_nodes:
-        resource_key = node.resource if options.by_resource else None
+        resource_key = gathering_profession_for_resource(node.resource) if options.by_resource else None
+        level_key = node.level if options.by_resource else None
         territory_key = node.territory if options.by_territory else None
-        groups[(resource_key, territory_key)].append((index, node))
+        groups[(resource_key, level_key, territory_key)].append((index, node))
 
     clusters: list[NodeCluster] = []
     next_cluster_id = 0
-    for (resource_key, territory_key), group_nodes in sorted(groups.items(), key=lambda item: str(item[0])):
+    for (resource_key, _level_key, territory_key), group_nodes in sorted(
+        groups.items(), key=lambda item: str(item[0])
+    ):
         points = [(float(node.x), float(node.z)) for _, node in group_nodes]
         labels = dbscan(points, eps=options.eps, min_samples=options.min_samples)
         clustered_labels = sorted({label for label in labels if label >= 0})
+        cluster_candidates: list[list[tuple[int, EnrichedGatheringNode]]] = []
         for label in clustered_labels:
-            members = [
-                (original_index, node)
-                for label_index, (original_index, node) in enumerate(group_nodes)
-                if labels[label_index] == label
-            ]
+            cluster_candidates.append(
+                [
+                    (original_index, node)
+                    for label_index, (original_index, node) in enumerate(group_nodes)
+                    if labels[label_index] == label
+                ]
+            )
+
+        for members in merge_cluster_candidates(cluster_candidates, merge_distance=options.eps * 1.5):
             member_points = [(float(node.x), float(node.z)) for _, node in members]
             resource_counts = Counter(node.resource for _, node in members)
             dominant_resource = resource_counts.most_common(1)[0][0]
@@ -109,6 +191,152 @@ def build_node_clusters(
             )
             next_cluster_id += 1
     return clusters
+
+
+def gathering_profession_for_resource(resource: str) -> str:
+    normalized = resource.strip().upper().replace(" ", "_").replace("-", "_")
+    if normalized in WOODCUTTING_RESOURCES:
+        return "WOODCUTTING"
+    if normalized in MINING_RESOURCES:
+        return "MINING"
+    if normalized in FARMING_RESOURCES:
+        return "FARMING"
+    if normalized in FISHING_RESOURCES:
+        return "FISHING"
+    return normalized
+
+
+def merge_cluster_candidates(
+    candidates: list[list[tuple[int, EnrichedGatheringNode]]],
+    *,
+    merge_distance: float,
+) -> list[list[tuple[int, EnrichedGatheringNode]]]:
+    merged = [candidate[:] for candidate in candidates if candidate]
+    changed = True
+    while changed:
+        changed = False
+        for left_index in range(len(merged)):
+            if changed:
+                break
+            for right_index in range(left_index + 1, len(merged)):
+                if cluster_candidates_should_merge(
+                    merged[left_index],
+                    merged[right_index],
+                    merge_distance=merge_distance,
+                ):
+                    by_node_index = {
+                        original_index: (original_index, node)
+                        for original_index, node in merged[left_index] + merged[right_index]
+                    }
+                    merged[left_index] = list(by_node_index.values())
+                    del merged[right_index]
+                    changed = True
+                    break
+    return merged
+
+
+def cluster_candidates_should_merge(
+    left: list[tuple[int, EnrichedGatheringNode]],
+    right: list[tuple[int, EnrichedGatheringNode]],
+    *,
+    merge_distance: float,
+) -> bool:
+    left_hull = convex_hull([(float(node.x), float(node.z)) for _, node in left])
+    right_hull = convex_hull([(float(node.x), float(node.z)) for _, node in right])
+    if hulls_overlap(left_hull, right_hull):
+        return True
+    return hull_distance(left_hull, right_hull) <= merge_distance
+
+
+def hulls_overlap(left: list[Point], right: list[Point]) -> bool:
+    if not left or not right:
+        return False
+    if len(left) >= 3 and any(point_in_polygon(point, right) for point in left):
+        return True
+    if len(right) >= 3 and any(point_in_polygon(point, left) for point in right):
+        return True
+    for left_start, left_end in hull_segments(left):
+        for right_start, right_end in hull_segments(right):
+            if segments_intersect(left_start, left_end, right_start, right_end):
+                return True
+    return False
+
+
+def hull_distance(left: list[Point], right: list[Point]) -> float:
+    if not left or not right:
+        return float("inf")
+    if hulls_overlap(left, right):
+        return 0
+    distances = [
+        point_to_segment_distance(point, start, end)
+        for point in left
+        for start, end in hull_segments(right)
+    ] + [
+        point_to_segment_distance(point, start, end)
+        for point in right
+        for start, end in hull_segments(left)
+    ]
+    return min(distances) if distances else min(hypot(a[0] - b[0], a[1] - b[1]) for a in left for b in right)
+
+
+def hull_segments(points: list[Point]) -> list[tuple[Point, Point]]:
+    if len(points) <= 1:
+        return [(points[0], points[0])] if points else []
+    if len(points) == 2:
+        return [(points[0], points[1])]
+    return [(points[index], points[(index + 1) % len(points)]) for index in range(len(points))]
+
+
+def point_in_polygon(point: Point, polygon: list[Point]) -> bool:
+    if len(polygon) < 3:
+        return False
+    inside = False
+    for index, previous_index in zip(range(len(polygon)), [len(polygon) - 1, *range(len(polygon) - 1)]):
+        current = polygon[index]
+        previous = polygon[previous_index]
+        intersects = (
+            (current[1] > point[1]) != (previous[1] > point[1])
+            and point[0]
+            < ((previous[0] - current[0]) * (point[1] - current[1])) / (previous[1] - current[1])
+            + current[0]
+        )
+        if intersects:
+            inside = not inside
+    return inside
+
+
+def segments_intersect(a: Point, b: Point, c: Point, d: Point) -> bool:
+    def orientation(p: Point, q: Point, r: Point) -> float:
+        return (q[1] - p[1]) * (r[0] - q[0]) - (q[0] - p[0]) * (r[1] - q[1])
+
+    def on_segment(p: Point, q: Point, r: Point) -> bool:
+        return (
+            min(p[0], r[0]) <= q[0] <= max(p[0], r[0])
+            and min(p[1], r[1]) <= q[1] <= max(p[1], r[1])
+        )
+
+    o1 = orientation(a, b, c)
+    o2 = orientation(a, b, d)
+    o3 = orientation(c, d, a)
+    o4 = orientation(c, d, b)
+    if o1 * o2 < 0 and o3 * o4 < 0:
+        return True
+    return (
+        o1 == 0 and on_segment(a, c, b)
+        or o2 == 0 and on_segment(a, d, b)
+        or o3 == 0 and on_segment(c, a, d)
+        or o4 == 0 and on_segment(c, b, d)
+    )
+
+
+def point_to_segment_distance(point: Point, start: Point, end: Point) -> float:
+    dx = end[0] - start[0]
+    dz = end[1] - start[1]
+    if dx == 0 and dz == 0:
+        return hypot(point[0] - start[0], point[1] - start[1])
+    t = max(0.0, min(1.0, ((point[0] - start[0]) * dx + (point[1] - start[1]) * dz) / (dx * dx + dz * dz)))
+    projected = (start[0] + t * dx, start[1] + t * dz)
+    return hypot(point[0] - projected[0], point[1] - projected[1])
 
 
 def assign_cluster_ids(
@@ -181,12 +409,7 @@ def compute_cluster_outline(points: list[Point]) -> list[ClusterOutlinePoint]:
     unique_points = sorted(set(points))
     if len(unique_points) <= 2:
         return [ClusterOutlinePoint(x=x, z=z) for x, z in unique_points]
-    if len(unique_points) == 3:
-        return [ClusterOutlinePoint(x=x, z=z) for x, z in order_points_clockwise(unique_points)]
-
-    outline_points = compute_alpha_shape_outline(unique_points)
-    if len(outline_points) < 3:
-        outline_points = convex_hull(unique_points)
+    outline_points = convex_hull(unique_points)
     return [ClusterOutlinePoint(x=x, z=z) for x, z in outline_points]
 
 

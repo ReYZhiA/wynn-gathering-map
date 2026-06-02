@@ -28,7 +28,7 @@ def test_dbscan_groups_close_nodes_and_marks_noise() -> None:
     assert labels[3] == -1
 
 
-def test_different_resources_do_not_cluster_when_grouped_by_resource() -> None:
+def test_different_professions_do_not_cluster_when_grouped() -> None:
     nodes = [
         make_node(0, 0, "OAK"),
         make_node(10, 0, "OAK"),
@@ -44,7 +44,7 @@ def test_different_resources_do_not_cluster_when_grouped_by_resource() -> None:
     )
 
     assert len(clusters) == 2
-    assert {cluster.resource for cluster in clusters} == {"OAK", "COPPER"}
+    assert {cluster.resource for cluster in clusters} == {"WOODCUTTING", "MINING"}
 
 
 def test_cluster_filters_apply_before_clustering() -> None:

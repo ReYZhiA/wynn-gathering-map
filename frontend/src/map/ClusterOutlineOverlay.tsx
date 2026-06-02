@@ -19,7 +19,7 @@ export function drawClusterOutlineOverlay({
   highlightedCluster,
   zoom,
 }: DrawClusterOutlineOverlayOptions) {
-  const isAreaOverview = zoom < 0.55;
+  const isAreaOverview = zoom < 0.8;
   for (const cluster of clusters) {
     if (cluster.outline.length === 0) continue;
     const points = cluster.outline.map((point) =>
