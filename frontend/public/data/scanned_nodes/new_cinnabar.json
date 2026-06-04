@@ -1,0 +1,1199 @@
+[
+  {
+    "x": -2303,
+    "y": 73,
+    "z": -462,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2301,
+    "y": 73,
+    "z": -465,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2298,
+    "y": 71,
+    "z": -468,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2297,
+    "y": 71,
+    "z": -456,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2296,
+    "y": 70,
+    "z": -471,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2294,
+    "y": 70,
+    "z": -460,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2294,
+    "y": 72,
+    "z": -458,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2293,
+    "y": 70,
+    "z": -455,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2293,
+    "y": 72,
+    "z": -452,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2290,
+    "y": 72,
+    "z": -451,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2285,
+    "y": 72,
+    "z": -454,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2285,
+    "y": 74,
+    "z": -451,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2283,
+    "y": 70,
+    "z": -456,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2280,
+    "y": 70,
+    "z": -460,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2278,
+    "y": 71,
+    "z": -459,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2207,
+    "y": 40,
+    "z": -527,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2206,
+    "y": 39,
+    "z": -530,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2205,
+    "y": 40,
+    "z": -537,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2204,
+    "y": 40,
+    "z": -533,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2203,
+    "y": 39,
+    "z": -532,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2201,
+    "y": 39,
+    "z": -524,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2201,
+    "y": 41,
+    "z": -522,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2199,
+    "y": 40,
+    "z": -522,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2196,
+    "y": 42,
+    "z": -525,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2195,
+    "y": 39,
+    "z": -533,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2193,
+    "y": 40,
+    "z": -540,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2192,
+    "y": 40,
+    "z": -531,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2191,
+    "y": 39,
+    "z": -539,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2190,
+    "y": 40,
+    "z": -535,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1955,
+    "y": 22,
+    "z": -569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1952,
+    "y": 22,
+    "z": -569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1948,
+    "y": 22,
+    "z": -573,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1947,
+    "y": 22,
+    "z": -571,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1947,
+    "y": 21,
+    "z": -568,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1943,
+    "y": 23,
+    "z": -571,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1938,
+    "y": 21,
+    "z": -567,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1936,
+    "y": 23,
+    "z": -566,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1680,
+    "y": 39,
+    "z": -457,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1680,
+    "y": 41,
+    "z": -447,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1679,
+    "y": 40,
+    "z": -459,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1678,
+    "y": 40,
+    "z": -449,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1673,
+    "y": 40,
+    "z": -435,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1662,
+    "y": 41,
+    "z": -463,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1661,
+    "y": 40,
+    "z": -461,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -2281,
+    "y": 69,
+    "z": -481,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -2279,
+    "y": 69,
+    "z": -478,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -2276,
+    "y": 69,
+    "z": -481,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -2250,
+    "y": 54,
+    "z": -478,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1584,
+    "y": 61,
+    "z": -497,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1569,
+    "y": 52,
+    "z": -516,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1566,
+    "y": 52,
+    "z": -514,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1562,
+    "y": 52,
+    "z": -512,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1559,
+    "y": 52,
+    "z": -510,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1547,
+    "y": 52,
+    "z": -518,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1546,
+    "y": 55,
+    "z": -506,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1545,
+    "y": 52,
+    "z": -515,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1522,
+    "y": 54,
+    "z": -519,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1511,
+    "y": 55,
+    "z": -521,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1509,
+    "y": 55,
+    "z": -518,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "PINE",
+    "level": 80
+  },
+  {
+    "x": -1602,
+    "y": 64,
+    "z": -501,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "REDWOOD",
+    "level": 115
+  },
+  {
+    "x": -1596,
+    "y": 64,
+    "z": -507,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "REDWOOD",
+    "level": 115
+  },
+  {
+    "x": -1486,
+    "y": 55,
+    "z": -562,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "REDWOOD",
+    "level": 115
+  },
+  {
+    "x": -1479,
+    "y": 55,
+    "z": -567,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "REDWOOD",
+    "level": 115
+  },
+  {
+    "x": -2250,
+    "y": 33,
+    "z": -554,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2246,
+    "y": 33,
+    "z": -562,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2244,
+    "y": 33,
+    "z": -576,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2243,
+    "y": 33,
+    "z": -571,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2240,
+    "y": 33,
+    "z": -562,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2239,
+    "y": 33,
+    "z": -578,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2239,
+    "y": 33,
+    "z": -559,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2236,
+    "y": 33,
+    "z": -584,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2235,
+    "y": 33,
+    "z": -568,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2234,
+    "y": 33,
+    "z": -576,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2234,
+    "y": 33,
+    "z": -546,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2233,
+    "y": 33,
+    "z": -540,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2231,
+    "y": 33,
+    "z": -558,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2230,
+    "y": 33,
+    "z": -581,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2230,
+    "y": 33,
+    "z": -567,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2229,
+    "y": 33,
+    "z": -589,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2227,
+    "y": 33,
+    "z": -496,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2226,
+    "y": 33,
+    "z": -491,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2225,
+    "y": 33,
+    "z": -588,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2224,
+    "y": 33,
+    "z": -538,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2221,
+    "y": 33,
+    "z": -522,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2221,
+    "y": 33,
+    "z": -503,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2218,
+    "y": 33,
+    "z": -594,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2218,
+    "y": 33,
+    "z": -508,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2216,
+    "y": 33,
+    "z": -491,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2215,
+    "y": 33,
+    "z": -556,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2213,
+    "y": 33,
+    "z": -592,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2213,
+    "y": 33,
+    "z": -559,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2185,
+    "y": 21,
+    "z": -555,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2180,
+    "y": 21,
+    "z": -584,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2180,
+    "y": 21,
+    "z": -570,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2174,
+    "y": 21,
+    "z": -579,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2174,
+    "y": 21,
+    "z": -556,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2158,
+    "y": 21,
+    "z": -567,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2158,
+    "y": 21,
+    "z": -560,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2146,
+    "y": 21,
+    "z": -568,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2108,
+    "y": 21,
+    "z": -563,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2100,
+    "y": 21,
+    "z": -565,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2096,
+    "y": 21,
+    "z": -566,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2080,
+    "y": 21,
+    "z": -560,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2059,
+    "y": 21,
+    "z": -552,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2050,
+    "y": 21,
+    "z": -540,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2038,
+    "y": 21,
+    "z": -563,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2019,
+    "y": 21,
+    "z": -557,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2011,
+    "y": 21,
+    "z": -590,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1997,
+    "y": 21,
+    "z": -570,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1989,
+    "y": 21,
+    "z": -583,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1974,
+    "y": 21,
+    "z": -562,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1920,
+    "y": 21,
+    "z": -561,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1910,
+    "y": 21,
+    "z": -561,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1872,
+    "y": 21,
+    "z": -577,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1868,
+    "y": 21,
+    "z": -577,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1866,
+    "y": 21,
+    "z": -583,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1851,
+    "y": 21,
+    "z": -556,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1838,
+    "y": 21,
+    "z": -558,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1828,
+    "y": 21,
+    "z": -531,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1813,
+    "y": 19,
+    "z": -496,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1813,
+    "y": 19,
+    "z": -492,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1812,
+    "y": 21,
+    "z": -539,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1812,
+    "y": 21,
+    "z": -520,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1811,
+    "y": 21,
+    "z": -549,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1809,
+    "y": 19,
+    "z": -489,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1808,
+    "y": 19,
+    "z": -500,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1808,
+    "y": 19,
+    "z": -484,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1798,
+    "y": 21,
+    "z": -545,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1795,
+    "y": 21,
+    "z": -537,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1781,
+    "y": 19,
+    "z": -470,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1780,
+    "y": 19,
+    "z": -475,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1776,
+    "y": 19,
+    "z": -471,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1776,
+    "y": 19,
+    "z": -467,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  }
+]

@@ -18,6 +18,12 @@ import { drawGatheringNodeOverlay } from "./GatheringNodeOverlay";
 import { drawTerritoryOverlay } from "./TerritoryOverlay";
 import { useMapViewport } from "./useMapViewport";
 
+type NodeEditBrush = {
+  mode: "off" | "assign" | "remove";
+  radius: number;
+  resource: string;
+};
+
 type MapCanvasProps = {
   nodes: GatheringNode[];
   territories: Territory[];
@@ -27,9 +33,13 @@ type MapCanvasProps = {
   selectedCluster: NodeCluster | null;
   showTerritories: boolean;
   showClusters: boolean;
+  focusNodes: GatheringNode[];
+  focusKey: string;
+  editBrush: NodeEditBrush;
   onSelectNode: (node: GatheringNode | null) => void;
   onSelectTerritory: (territory: Territory | null) => void;
   onSelectCluster: (cluster: NodeCluster | null) => void;
+  onBrushNodes: (nodes: GatheringNode[]) => void;
   debugEnabled: boolean;
   onDebugChange: (debug: DebugCoordinateState) => void;
 };
@@ -59,9 +69,13 @@ export function MapCanvas({
   selectedCluster,
   showTerritories,
   showClusters,
+  focusNodes,
+  focusKey,
+  editBrush,
   onSelectNode,
   onSelectTerritory,
   onSelectCluster,
+  onBrushNodes,
   debugEnabled,
   onDebugChange,
 }: MapCanvasProps) {
@@ -70,6 +84,8 @@ export function MapCanvas({
   const imageRef = useRef<HTMLImageElement | null>(null);
   const dragStartRef = useRef<ScreenPoint | null>(null);
   const didDragRef = useRef(false);
+  const isBrushDraggingRef = useRef(false);
+  const brushedNodesRef = useRef(new Map<string, GatheringNode>());
   const activePointersRef = useRef(new Map<number, ScreenPoint>());
   const touchGestureRef = useRef<TouchGestureState | null>(null);
   const [canvasSize, setCanvasSize] = useState({ width: 1, height: 1 });
@@ -81,10 +97,21 @@ export function MapCanvas({
   const [hoveredTerritory, setHoveredTerritory] = useState<Territory | null>(null);
   const [hoveredCluster, setHoveredCluster] = useState<NodeCluster | null>(null);
   const [pointerScreen, setPointerScreen] = useState<ScreenPoint | null>(null);
-  const { viewport, imageToScreen, screenToImage, panBy, zoomAt, zoomByFactorAt, reset } = useMapViewport();
+  const [brushScreen, setBrushScreen] = useState<ScreenPoint | null>(null);
+  const {
+    viewport,
+    imageToScreen,
+    screenToImage,
+    panBy,
+    zoomAt,
+    zoomByFactorAt,
+    fitImageBounds,
+    reset,
+  } = useMapViewport();
   const activeNode = hoveredNode ?? selectedNode;
   const activeTerritory = hoveredTerritory ?? selectedTerritory;
   const activeCluster = hoveredCluster ?? selectedCluster;
+  const isBrushEnabled = editBrush.mode !== "off";
   const calibration: MapCalibration = useMemo(
     () => ({
       ...DEFAULT_MAP_CALIBRATION,
@@ -114,6 +141,13 @@ export function MapCanvas({
         height: image.naturalHeight || DEFAULT_MAP_CALIBRATION.imageHeight,
       });
     };
+    image.onerror = () => {
+      imageRef.current = null;
+      setImageSize({
+        width: DEFAULT_MAP_CALIBRATION.imageWidth,
+        height: DEFAULT_MAP_CALIBRATION.imageHeight,
+      });
+    };
   }, []);
 
   useEffect(() => {
@@ -127,6 +161,20 @@ export function MapCanvas({
     observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (focusNodes.length === 0 || canvasSize.width <= 1 || canvasSize.height <= 1) return;
+    const imagePoints = focusNodes.map((node) => worldToImage({ x: node.x, z: node.z }, calibration));
+    fitImageBounds(
+      {
+        minX: Math.min(...imagePoints.map((point) => point.x)),
+        minY: Math.min(...imagePoints.map((point) => point.y)),
+        maxX: Math.max(...imagePoints.map((point) => point.x)),
+        maxY: Math.max(...imagePoints.map((point) => point.y)),
+      },
+      canvasSize,
+    );
+  }, [calibration, canvasSize, fitImageBounds, focusKey, focusNodes]);
 
   const findNodeAt = useCallback(
     (screenPoint: ScreenPoint): GatheringNode | null => {
@@ -146,6 +194,18 @@ export function MapCanvas({
       return null;
     },
     [calibration, clusters.length, imageToScreen, nodes, showClusters, viewport.zoom],
+  );
+
+  const findNodesInBrush = useCallback(
+    (screenPoint: ScreenPoint): GatheringNode[] => {
+      const brushRadius = Math.max(HIT_RADIUS, editBrush.radius);
+      return nodes.filter((node) => {
+        const imagePoint = worldToImage({ x: node.x, z: node.z }, calibration);
+        const markerScreenPoint = imageToScreen(imagePoint);
+        return distance(markerScreenPoint, screenPoint) <= brushRadius;
+      });
+    },
+    [calibration, editBrush.radius, imageToScreen, nodes],
   );
 
   const findTerritoryAt = useCallback(
@@ -203,7 +263,7 @@ export function MapCanvas({
     const canvas = canvasRef.current;
     const context = canvas?.getContext("2d");
     const image = imageRef.current;
-    if (!canvas || !context || !image) return;
+    if (!canvas || !context) return;
 
     const devicePixelRatio = window.devicePixelRatio || 1;
     canvas.width = canvasSize.width * devicePixelRatio;
@@ -215,17 +275,19 @@ export function MapCanvas({
     context.clearRect(0, 0, canvasSize.width, canvasSize.height);
     context.fillStyle = "#111827";
     context.fillRect(0, 0, canvasSize.width, canvasSize.height);
-    context.save();
-    context.setTransform(
-      devicePixelRatio * viewport.zoom,
-      0,
-      0,
-      devicePixelRatio * viewport.zoom,
-      devicePixelRatio * viewport.panX,
-      devicePixelRatio * viewport.panY,
-    );
-    context.drawImage(image, 0, 0, calibration.imageWidth, calibration.imageHeight);
-    context.restore();
+    if (image) {
+      context.save();
+      context.setTransform(
+        devicePixelRatio * viewport.zoom,
+        0,
+        0,
+        devicePixelRatio * viewport.zoom,
+        devicePixelRatio * viewport.panX,
+        devicePixelRatio * viewport.panY,
+      );
+      context.drawImage(image, 0, 0, calibration.imageWidth, calibration.imageHeight);
+      context.restore();
+    }
 
     if (showTerritories) {
       drawTerritoryOverlay({
@@ -251,7 +313,7 @@ export function MapCanvas({
       });
     }
 
-    if (!showClusters || clusters.length === 0 || viewport.zoom >= NODE_DETAIL_ZOOM) {
+    if (isBrushEnabled || !showClusters || clusters.length === 0 || viewport.zoom >= NODE_DETAIL_ZOOM) {
       drawGatheringNodeOverlay({
         context,
         nodes,
@@ -261,15 +323,32 @@ export function MapCanvas({
         highlightedNode: activeNode,
       });
     }
+
+    if (isBrushEnabled && brushScreen) {
+      context.save();
+      context.beginPath();
+      context.arc(brushScreen.x, brushScreen.y, editBrush.radius, 0, Math.PI * 2);
+      context.fillStyle =
+        editBrush.mode === "remove" ? "rgba(239, 68, 68, 0.14)" : "rgba(34, 197, 94, 0.14)";
+      context.strokeStyle = editBrush.mode === "remove" ? "#ef4444" : "#22c55e";
+      context.lineWidth = 2;
+      context.fill();
+      context.stroke();
+      context.restore();
+    }
   }, [
     activeCluster,
     activeNode,
+    brushScreen,
     canvasSize.height,
     canvasSize.width,
     clusters,
     calibration,
+    editBrush.mode,
+    editBrush.radius,
     hoveredTerritory,
     imageToScreen,
+    isBrushEnabled,
     nodeCountsByTerritory,
     nodes,
     selectedTerritory,
@@ -368,15 +447,32 @@ export function MapCanvas({
     setHoveredTerritory(null);
   }
 
+  function collectBrushNodes(screenPoint: ScreenPoint) {
+    for (const node of findNodesInBrush(screenPoint)) {
+      const nodeId = node.devId ?? `${node.x}:${node.y}:${node.z}:${node.resource}`;
+      brushedNodesRef.current.set(nodeId, node);
+    }
+  }
+
   return (
     <div className="map-shell" ref={containerRef}>
       <canvas
         ref={canvasRef}
-        className="map-canvas"
+        className={`map-canvas${isBrushEnabled ? " is-brushing" : ""}`}
         onPointerDown={(event) => {
           event.currentTarget.setPointerCapture(event.pointerId);
           const screenPoint = getRelativePointer(event);
           activePointersRef.current.set(event.pointerId, screenPoint);
+          if (isBrushEnabled && activePointersRef.current.size === 1) {
+            isBrushDraggingRef.current = true;
+            brushedNodesRef.current.clear();
+            collectBrushNodes(screenPoint);
+            setBrushScreen(screenPoint);
+            dragStartRef.current = null;
+            didDragRef.current = true;
+            clearHoverState();
+            return;
+          }
           if (activePointersRef.current.size >= 2) {
             touchGestureRef.current = getTouchGesture();
             dragStartRef.current = null;
@@ -392,6 +488,12 @@ export function MapCanvas({
           setPointerScreen(screenPoint);
           if (activePointersRef.current.has(event.pointerId)) {
             activePointersRef.current.set(event.pointerId, screenPoint);
+          }
+          if (isBrushDraggingRef.current) {
+            collectBrushNodes(screenPoint);
+            setBrushScreen(screenPoint);
+            didDragRef.current = true;
+            return;
           }
           if (activePointersRef.current.size >= 2) {
             const nextGesture = getTouchGesture();
@@ -430,6 +532,15 @@ export function MapCanvas({
           activePointersRef.current.delete(event.pointerId);
           touchGestureRef.current = getTouchGesture();
           dragStartRef.current = null;
+          if (isBrushDraggingRef.current) {
+            const screenPoint = getRelativePointer(event);
+            collectBrushNodes(screenPoint);
+            onBrushNodes(Array.from(brushedNodesRef.current.values()));
+            brushedNodesRef.current.clear();
+            isBrushDraggingRef.current = false;
+            setBrushScreen(null);
+            return;
+          }
           if (didDragRef.current) return;
           const screenPoint = getRelativePointer(event);
           const node = findNodeAt(screenPoint);
@@ -443,6 +554,9 @@ export function MapCanvas({
           activePointersRef.current.delete(event.pointerId);
           touchGestureRef.current = getTouchGesture();
           dragStartRef.current = null;
+          isBrushDraggingRef.current = false;
+          brushedNodesRef.current.clear();
+          setBrushScreen(null);
           didDragRef.current = true;
           clearHoverState();
         }}
@@ -450,6 +564,9 @@ export function MapCanvas({
           activePointersRef.current.clear();
           touchGestureRef.current = null;
           dragStartRef.current = null;
+          isBrushDraggingRef.current = false;
+          brushedNodesRef.current.clear();
+          setBrushScreen(null);
           clearHoverState();
           setPointerScreen(null);
         }}

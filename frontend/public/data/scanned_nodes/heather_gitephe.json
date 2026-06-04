@@ -1,0 +1,1145 @@
+[
+  {
+    "x": -1617,
+    "y": 125,
+    "z": -1071,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1617,
+    "y": 125,
+    "z": -1067,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1613,
+    "y": 125,
+    "z": -1071,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1612,
+    "y": 125,
+    "z": -1074,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1608,
+    "y": 124,
+    "z": -1084,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1607,
+    "y": 125,
+    "z": -1077,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1607,
+    "y": 125,
+    "z": -1074,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1607,
+    "y": 125,
+    "z": -1065,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1604,
+    "y": 125,
+    "z": -1070,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1603,
+    "y": 125,
+    "z": -1079,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1603,
+    "y": 125,
+    "z": -1065,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1599,
+    "y": 125,
+    "z": -1068,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1598,
+    "y": 125,
+    "z": -1070,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1560,
+    "y": 124,
+    "z": -1080,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1560,
+    "y": 124,
+    "z": -1076,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1557,
+    "y": 124,
+    "z": -1083,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1556,
+    "y": 124,
+    "z": -1087,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1554,
+    "y": 124,
+    "z": -1080,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1551,
+    "y": 123,
+    "z": -1084,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1539,
+    "y": 122,
+    "z": -1091,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1534,
+    "y": 122,
+    "z": -1091,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1533,
+    "y": 122,
+    "z": -1095,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1529,
+    "y": 122,
+    "z": -1091,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1527,
+    "y": 122,
+    "z": -1090,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1527,
+    "y": 122,
+    "z": -1085,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1523,
+    "y": 124,
+    "z": -1425,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1520,
+    "y": 124,
+    "z": -1423,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1520,
+    "y": 123,
+    "z": -1420,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1517,
+    "y": 124,
+    "z": -1425,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1516,
+    "y": 123,
+    "z": -1418,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1516,
+    "y": 123,
+    "z": -1415,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1515,
+    "y": 124,
+    "z": -1423,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1514,
+    "y": 123,
+    "z": -1416,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1188,
+    "y": 82,
+    "z": -1232,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1186,
+    "y": 85,
+    "z": -1245,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1183,
+    "y": 85,
+    "z": -1242,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1182,
+    "y": 83,
+    "z": -1233,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1180,
+    "y": 83,
+    "z": -1230,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1178,
+    "y": 84,
+    "z": -1242,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1178,
+    "y": 84,
+    "z": -1239,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1622,
+    "y": 121,
+    "z": -1433,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1618,
+    "y": 121,
+    "z": -1432,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1615,
+    "y": 121,
+    "z": -1431,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1612,
+    "y": 121,
+    "z": -1432,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1606,
+    "y": 121,
+    "z": -1434,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1605,
+    "y": 121,
+    "z": -1457,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1604,
+    "y": 121,
+    "z": -1454,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1604,
+    "y": 121,
+    "z": -1437,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1603,
+    "y": 121,
+    "z": -1443,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1602,
+    "y": 121,
+    "z": -1460,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1602,
+    "y": 121,
+    "z": -1451,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1601,
+    "y": 121,
+    "z": -1445,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1600,
+    "y": 121,
+    "z": -1455,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1599,
+    "y": 121,
+    "z": -1459,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1599,
+    "y": 121,
+    "z": -1452,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1599,
+    "y": 121,
+    "z": -1435,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1597,
+    "y": 121,
+    "z": -1457,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1596,
+    "y": 121,
+    "z": -1441,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1596,
+    "y": 121,
+    "z": -1437,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1591,
+    "y": 121,
+    "z": -1436,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1522,
+    "y": 121,
+    "z": -1222,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1521,
+    "y": 121,
+    "z": -1213,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1517,
+    "y": 121,
+    "z": -1209,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1515,
+    "y": 121,
+    "z": -1224,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1511,
+    "y": 121,
+    "z": -1212,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1510,
+    "y": 121,
+    "z": -1220,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1499,
+    "y": 121,
+    "z": -1179,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1497,
+    "y": 121,
+    "z": -1383,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1496,
+    "y": 121,
+    "z": -1339,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1495,
+    "y": 121,
+    "z": -1377,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1492,
+    "y": 121,
+    "z": -1391,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1492,
+    "y": 121,
+    "z": -1179,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1486,
+    "y": 121,
+    "z": -1380,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1486,
+    "y": 121,
+    "z": -1349,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1484,
+    "y": 121,
+    "z": -1390,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1484,
+    "y": 121,
+    "z": -1383,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1483,
+    "y": 121,
+    "z": -1185,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1480,
+    "y": 121,
+    "z": -1296,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1479,
+    "y": 121,
+    "z": -1366,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1477,
+    "y": 121,
+    "z": -1364,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1475,
+    "y": 121,
+    "z": -1370,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1475,
+    "y": 121,
+    "z": -1291,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1472,
+    "y": 121,
+    "z": -1285,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1471,
+    "y": 121,
+    "z": -1369,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1468,
+    "y": 121,
+    "z": -1372,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1466,
+    "y": 121,
+    "z": -1376,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1452,
+    "y": 121,
+    "z": -1275,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1452,
+    "y": 121,
+    "z": -1265,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1449,
+    "y": 121,
+    "z": -1260,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1448,
+    "y": 121,
+    "z": -1242,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1447,
+    "y": 121,
+    "z": -1279,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1444,
+    "y": 121,
+    "z": -1244,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1443,
+    "y": 121,
+    "z": -1247,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1439,
+    "y": 121,
+    "z": -1247,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1275,
+    "y": 78,
+    "z": -1266,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1273,
+    "y": 78,
+    "z": -1275,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1270,
+    "y": 78,
+    "z": -1269,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1269,
+    "y": 78,
+    "z": -1283,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1266,
+    "y": 78,
+    "z": -1277,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1265,
+    "y": 78,
+    "z": -1285,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1263,
+    "y": 78,
+    "z": -1280,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1260,
+    "y": 78,
+    "z": -1260,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1256,
+    "y": 78,
+    "z": -1257,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1254,
+    "y": 78,
+    "z": -1281,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1253,
+    "y": 78,
+    "z": -1285,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1250,
+    "y": 78,
+    "z": -1278,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1249,
+    "y": 78,
+    "z": -1255,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1248,
+    "y": 78,
+    "z": -1288,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1246,
+    "y": 78,
+    "z": -1280,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1246,
+    "y": 78,
+    "z": -1248,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1243,
+    "y": 78,
+    "z": -1254,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1237,
+    "y": 78,
+    "z": -1248,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1235,
+    "y": 78,
+    "z": -1242,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1231,
+    "y": 78,
+    "z": -1244,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1226,
+    "y": 78,
+    "z": -1294,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1226,
+    "y": 78,
+    "z": -1253,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1225,
+    "y": 78,
+    "z": -1288,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1223,
+    "y": 78,
+    "z": -1300,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1222,
+    "y": 78,
+    "z": -1249,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1221,
+    "y": 78,
+    "z": -1258,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1217,
+    "y": 78,
+    "z": -1288,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1217,
+    "y": 78,
+    "z": -1255,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1216,
+    "y": 78,
+    "z": -1304,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1213,
+    "y": 78,
+    "z": -1297,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1195,
+    "y": 78,
+    "z": -1290,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1194,
+    "y": 78,
+    "z": -1287,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -1193,
+    "y": 78,
+    "z": -1295,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  }
+]

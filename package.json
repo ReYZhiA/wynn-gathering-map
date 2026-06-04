@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "cd backend && ${PYTHON_BIN:-python3} -m uvicorn app.main:app --reload --host 0.0.0.0",
+    "backend": "cd backend && ${PYTHON_BIN:-/home/baptiste/micromamba/envs/wynn-eco/bin/python3} -m uvicorn app.main:app --reload --host 0.0.0.0",
     "frontend": "npm --prefix frontend run dev",
-    "export:static": "cd backend && ${PYTHON_BIN:-python3} -m app.static_export --output ../frontend/public/data --eps 20 --min-samples 10 --by-resource true --by-territory false --mode connected",
+    "export:static": "cd backend && ${PYTHON_BIN:-/home/baptiste/micromamba/envs/wynn-eco/bin/python3} -m app.static_export --output ../frontend/public/data --eps 20 --min-samples 10 --by-resource true --by-territory false --mode connected",
     "build:static": "npm run export:static && VITE_STATIC_DATA=true npm --prefix frontend run build",
     "build": "npm --prefix frontend run build",
     "preview": "npm --prefix frontend run preview",
-    "test": "cd backend && ${PYTHON_BIN:-python3} -m pytest"
+    "test": "cd backend && ${PYTHON_BIN:-/home/baptiste/micromamba/envs/wynn-eco/bin/python3} -m pytest"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

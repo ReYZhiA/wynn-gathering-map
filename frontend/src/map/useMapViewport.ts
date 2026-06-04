@@ -67,6 +67,32 @@ export function useMapViewport(initial: MapViewport = { panX: 0, panY: 0, zoom: 
     });
   }, []);
 
+  const fitImageBounds = useCallback(
+    (
+      bounds: { minX: number; minY: number; maxX: number; maxY: number },
+      size: { width: number; height: number },
+      padding = 48,
+    ) => {
+      const boundsWidth = Math.max(1, bounds.maxX - bounds.minX);
+      const boundsHeight = Math.max(1, bounds.maxY - bounds.minY);
+      const availableWidth = Math.max(1, size.width - padding * 2);
+      const availableHeight = Math.max(1, size.height - padding * 2);
+      const nextZoom = Math.min(
+        MAX_ZOOM,
+        Math.max(MIN_ZOOM, Math.min(availableWidth / boundsWidth, availableHeight / boundsHeight)),
+      );
+      const centerX = (bounds.minX + bounds.maxX) / 2;
+      const centerY = (bounds.minY + bounds.maxY) / 2;
+
+      setViewport({
+        zoom: nextZoom,
+        panX: size.width / 2 - centerX * nextZoom,
+        panY: size.height / 2 - centerY * nextZoom,
+      });
+    },
+    [],
+  );
+
   const reset = useCallback(() => setViewport(initial), [initial]);
 
   return {
@@ -76,6 +102,7 @@ export function useMapViewport(initial: MapViewport = { panX: 0, panY: 0, zoom: 
     panBy,
     zoomAt,
     zoomByFactorAt,
+    fitImageBounds,
     reset,
   };
 }

@@ -7,19 +7,7 @@ export async function fetchNodeClusters(
   settings: ClusterSettings,
 ): Promise<NodeClustersResponse> {
   if (USE_STATIC_DATA) {
-    const response = await fetch(staticDataUrl("node-clusters.json"));
-    if (!response.ok) {
-      throw new Error(`Failed to fetch static node clusters: ${response.status}`);
-    }
-    const snapshot = (await response.json()) as NodeClustersResponse;
-    const filteredClusters = filterStaticClusters(snapshot.data, filters);
-    return {
-      data: filteredClusters,
-      meta: {
-        ...snapshot.meta,
-        count: filteredClusters.length,
-      },
-    };
+    return fetchStaticNodeClusters(filters);
   }
 
   const params = new URLSearchParams();
@@ -33,11 +21,31 @@ export async function fetchNodeClusters(
   params.set("byTerritory", String(settings.byTerritory));
   params.set("mode", settings.mode);
 
-  const response = await fetch(`${API_BASE_URL}/api/node-clusters?${params.toString()}`);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch node clusters: ${response.status}`);
+  try {
+    const response = await fetch(`${API_BASE_URL}/api/node-clusters?${params.toString()}`);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch node clusters: ${response.status}`);
+    }
+    return response.json() as Promise<NodeClustersResponse>;
+  } catch {
+    return fetchStaticNodeClusters(filters);
   }
-  return response.json() as Promise<NodeClustersResponse>;
+}
+
+async function fetchStaticNodeClusters(filters: GatheringNodeFilters): Promise<NodeClustersResponse> {
+  const response = await fetch(staticDataUrl("node-clusters.json"));
+  if (!response.ok) {
+    throw new Error(`Failed to fetch static node clusters: ${response.status}`);
+  }
+  const snapshot = (await response.json()) as NodeClustersResponse;
+  const filteredClusters = filterStaticClusters(snapshot.data, filters);
+  return {
+    data: filteredClusters,
+    meta: {
+      ...snapshot.meta,
+      count: filteredClusters.length,
+    },
+  };
 }
 
 function filterStaticClusters(

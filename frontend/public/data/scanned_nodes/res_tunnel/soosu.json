@@ -1,0 +1,614 @@
+[
+  {
+    "x": -4890,
+    "y": 88,
+    "z": 4552,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4888,
+    "y": 88,
+    "z": 4533,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4888,
+    "y": 89,
+    "z": 4540,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4888,
+    "y": 89,
+    "z": 4560,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4881,
+    "y": 86,
+    "z": 4634,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4879,
+    "y": 88,
+    "z": 4548,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4879,
+    "y": 84,
+    "z": 4572,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4878,
+    "y": 90,
+    "z": 4584,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4878,
+    "y": 86,
+    "z": 4629,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4877,
+    "y": 87,
+    "z": 4552,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4877,
+    "y": 88,
+    "z": 4574,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4877,
+    "y": 89,
+    "z": 4592,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4876,
+    "y": 87,
+    "z": 4635,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -4885,
+    "y": 86,
+    "z": 4602,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4884,
+    "y": 85,
+    "z": 4606,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4884,
+    "y": 86,
+    "z": 4608,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4883,
+    "y": 85,
+    "z": 4604,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4883,
+    "y": 84,
+    "z": 4610,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4875,
+    "y": 88,
+    "z": 4602,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4874,
+    "y": 96,
+    "z": 4602,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 83,
+    "z": 4518,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 87,
+    "z": 4534,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 87,
+    "z": 4539,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 87,
+    "z": 4563,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 88,
+    "z": 4592,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 87,
+    "z": 4595,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4865,
+    "y": 87,
+    "z": 4608,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 83,
+    "z": 4520,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 83,
+    "z": 4524,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 87,
+    "z": 4532,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 88,
+    "z": 4553,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 88,
+    "z": 4561,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 90,
+    "z": 4571,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 89,
+    "z": 4575,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 88,
+    "z": 4585,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 89,
+    "z": 4590,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 88,
+    "z": 4598,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4864,
+    "y": 86,
+    "z": 4606,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4863,
+    "y": 87,
+    "z": 4542,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4863,
+    "y": 87,
+    "z": 4549,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4863,
+    "y": 87,
+    "z": 4559,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4863,
+    "y": 88,
+    "z": 4587,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4863,
+    "y": 88,
+    "z": 4594,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4862,
+    "y": 85,
+    "z": 4614,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4861,
+    "y": 86,
+    "z": 4619,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4858,
+    "y": 88,
+    "z": 4618,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4858,
+    "y": 84,
+    "z": 4628,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4857,
+    "y": 84,
+    "z": 4631,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4854,
+    "y": 88,
+    "z": 4586,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4853,
+    "y": 88,
+    "z": 4549,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4853,
+    "y": 88,
+    "z": 4555,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4853,
+    "y": 88,
+    "z": 4569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4853,
+    "y": 88,
+    "z": 4575,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4853,
+    "y": 88,
+    "z": 4593,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4852,
+    "y": 89,
+    "z": 4547,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4852,
+    "y": 88,
+    "z": 4552,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4852,
+    "y": 88,
+    "z": 4557,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4852,
+    "y": 88,
+    "z": 4572,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4852,
+    "y": 88,
+    "z": 4589,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4852,
+    "y": 89,
+    "z": 4597,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4844,
+    "y": 88,
+    "z": 4542,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4844,
+    "y": 88,
+    "z": 4548,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4844,
+    "y": 88,
+    "z": 4562,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4843,
+    "y": 88,
+    "z": 4546,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4843,
+    "y": 88,
+    "z": 4559,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4842,
+    "y": 88,
+    "z": 4541,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4842,
+    "y": 88,
+    "z": 4565,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -4842,
+    "y": 89,
+    "z": 4569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  }
+]

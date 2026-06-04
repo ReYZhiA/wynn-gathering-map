@@ -1,0 +1,4241 @@
+[
+  {
+    "x": -1955,
+    "y": 22,
+    "z": -569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1952,
+    "y": 22,
+    "z": -569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1948,
+    "y": 22,
+    "z": -573,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1947,
+    "y": 22,
+    "z": -571,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1947,
+    "y": 21,
+    "z": -568,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "CINNABAR",
+    "level": 115
+  },
+  {
+    "x": -1443,
+    "y": 122,
+    "z": -1171,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1443,
+    "y": 121,
+    "z": -1168,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1440,
+    "y": 121,
+    "z": -1168,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1439,
+    "y": 122,
+    "z": -1173,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1439,
+    "y": 119,
+    "z": -1159,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1438,
+    "y": 122,
+    "z": -1177,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1436,
+    "y": 119,
+    "z": -1163,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1435,
+    "y": 122,
+    "z": -1173,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1434,
+    "y": 119,
+    "z": -1156,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -1433,
+    "y": 119,
+    "z": -1162,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "HEATHER",
+    "level": 115
+  },
+  {
+    "x": -2240,
+    "y": 52,
+    "z": -631,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2237,
+    "y": 52,
+    "z": -629,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2237,
+    "y": 51,
+    "z": -616,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2237,
+    "y": 51,
+    "z": -609,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2236,
+    "y": 52,
+    "z": -622,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2233,
+    "y": 51,
+    "z": -612,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2231,
+    "y": 51,
+    "z": -609,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2230,
+    "y": 52,
+    "z": -616,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2229,
+    "y": 52,
+    "z": -623,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2224,
+    "y": 52,
+    "z": -622,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2221,
+    "y": 46,
+    "z": -631,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2219,
+    "y": 46,
+    "z": -629,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2214,
+    "y": 46,
+    "z": -623,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2213,
+    "y": 46,
+    "z": -631,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2212,
+    "y": 46,
+    "z": -617,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2211,
+    "y": 46,
+    "z": -625,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2211,
+    "y": 46,
+    "z": -619,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2114,
+    "y": 42,
+    "z": -754,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2109,
+    "y": 55,
+    "z": -768,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2107,
+    "y": 55,
+    "z": -768,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2099,
+    "y": 55,
+    "z": -771,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2097,
+    "y": 55,
+    "z": -773,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2095,
+    "y": 42,
+    "z": -758,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2094,
+    "y": 55,
+    "z": -767,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2091,
+    "y": 55,
+    "z": -769,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2091,
+    "y": 42,
+    "z": -752,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2083,
+    "y": 54,
+    "z": -773,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2081,
+    "y": 54,
+    "z": -772,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2080,
+    "y": 44,
+    "z": -763,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2075,
+    "y": 44,
+    "z": -760,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2074,
+    "y": 54,
+    "z": -772,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2073,
+    "y": 44,
+    "z": -762,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2070,
+    "y": 54,
+    "z": -782,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2068,
+    "y": 54,
+    "z": -778,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2066,
+    "y": 54,
+    "z": -779,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2066,
+    "y": 54,
+    "z": -774,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2061,
+    "y": 52,
+    "z": -782,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2059,
+    "y": 52,
+    "z": -769,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2057,
+    "y": 52,
+    "z": -782,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2057,
+    "y": 52,
+    "z": -778,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2057,
+    "y": 44,
+    "z": -764,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2056,
+    "y": 52,
+    "z": -770,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2054,
+    "y": 44,
+    "z": -760,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2047,
+    "y": 44,
+    "z": -765,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -2043,
+    "y": 39,
+    "z": -751,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1949,
+    "y": 46,
+    "z": -680,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1947,
+    "y": 46,
+    "z": -685,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1947,
+    "y": 46,
+    "z": -668,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1942,
+    "y": 48,
+    "z": -669,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1941,
+    "y": 48,
+    "z": -674,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1938,
+    "y": 44,
+    "z": -689,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1936,
+    "y": 48,
+    "z": -663,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1935,
+    "y": 44,
+    "z": -679,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1935,
+    "y": 48,
+    "z": -672,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1928,
+    "y": 44,
+    "z": -685,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1873,
+    "y": 38,
+    "z": -889,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1870,
+    "y": 38,
+    "z": -896,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1870,
+    "y": 38,
+    "z": -889,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1867,
+    "y": 38,
+    "z": -892,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1866,
+    "y": 36,
+    "z": -878,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1864,
+    "y": 36,
+    "z": -876,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1858,
+    "y": 36,
+    "z": -882,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1854,
+    "y": 47,
+    "z": -892,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1852,
+    "y": 47,
+    "z": -900,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1849,
+    "y": 47,
+    "z": -892,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1849,
+    "y": 39,
+    "z": -872,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1847,
+    "y": 47,
+    "z": -896,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1845,
+    "y": 41,
+    "z": -884,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1845,
+    "y": 39,
+    "z": -872,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1843,
+    "y": 39,
+    "z": -877,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1838,
+    "y": 47,
+    "z": -896,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1838,
+    "y": 44,
+    "z": -878,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1837,
+    "y": 47,
+    "z": -886,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1836,
+    "y": 44,
+    "z": -870,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1835,
+    "y": 44,
+    "z": -878,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1834,
+    "y": 47,
+    "z": -898,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1832,
+    "y": 51,
+    "z": -884,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1830,
+    "y": 51,
+    "z": -893,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1829,
+    "y": 44,
+    "z": -868,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1824,
+    "y": 51,
+    "z": -882,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1824,
+    "y": 44,
+    "z": -870,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1823,
+    "y": 44,
+    "z": -874,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1822,
+    "y": 51,
+    "z": -890,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "JUTE",
+    "level": 110
+  },
+  {
+    "x": -1711,
+    "y": 29,
+    "z": -1402,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "KOI",
+    "level": 60
+  },
+  {
+    "x": -1499,
+    "y": 121,
+    "z": -1179,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAHSEER",
+    "level": 115
+  },
+  {
+    "x": -2288,
+    "y": 8,
+    "z": -1042,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2280,
+    "y": 14,
+    "z": -1067,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2277,
+    "y": 7,
+    "z": -1025,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2277,
+    "y": 7,
+    "z": -1018,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2274,
+    "y": 7,
+    "z": -1021,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2246,
+    "y": 6,
+    "z": -1000,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2244,
+    "y": 8,
+    "z": -1073,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2242,
+    "y": 6,
+    "z": -1003,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2236,
+    "y": 7,
+    "z": -996,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2233,
+    "y": 31,
+    "z": -1094,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2226,
+    "y": 30,
+    "z": -1094,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2219,
+    "y": 30,
+    "z": -1090,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2218,
+    "y": 29,
+    "z": -1112,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2217,
+    "y": 30,
+    "z": -1107,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2214,
+    "y": 18,
+    "z": -1248,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2212,
+    "y": 24,
+    "z": -1206,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2210,
+    "y": 29,
+    "z": -1107,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2207,
+    "y": 22,
+    "z": -1237,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2207,
+    "y": 29,
+    "z": -1120,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2204,
+    "y": 24,
+    "z": -1222,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2204,
+    "y": 29,
+    "z": -1123,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2200,
+    "y": 30,
+    "z": -1109,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2198,
+    "y": 27,
+    "z": -1192,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2194,
+    "y": 27,
+    "z": -1188,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2194,
+    "y": 30,
+    "z": -1109,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2190,
+    "y": 16,
+    "z": -1259,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2182,
+    "y": 28,
+    "z": -1212,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2177,
+    "y": 28,
+    "z": -1207,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2176,
+    "y": 30,
+    "z": -1197,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2172,
+    "y": 26,
+    "z": -1140,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2135,
+    "y": 24,
+    "z": -1239,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2128,
+    "y": 23,
+    "z": -1229,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2121,
+    "y": 16,
+    "z": -1185,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2113,
+    "y": 14,
+    "z": -1210,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2110,
+    "y": 14,
+    "z": -1206,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2092,
+    "y": 21,
+    "z": -1298,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2029,
+    "y": 23,
+    "z": -1336,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -2012,
+    "y": 23,
+    "z": -1350,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1984,
+    "y": 24,
+    "z": -1345,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1980,
+    "y": 24,
+    "z": -1349,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1968,
+    "y": 25,
+    "z": -1355,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1965,
+    "y": 25,
+    "z": -1358,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1964,
+    "y": 33,
+    "z": -1473,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1949,
+    "y": 33,
+    "z": -1474,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1882,
+    "y": 22,
+    "z": -1342,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1880,
+    "y": 19,
+    "z": -1330,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1877,
+    "y": 19,
+    "z": -1327,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1840,
+    "y": 26,
+    "z": -1355,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1831,
+    "y": 26,
+    "z": -1355,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1830,
+    "y": 24,
+    "z": -1342,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1827,
+    "y": 26,
+    "z": -1351,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1826,
+    "y": 24,
+    "z": -1338,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1823,
+    "y": 26,
+    "z": -1355,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1818,
+    "y": 24,
+    "z": -1340,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1818,
+    "y": 24,
+    "z": -1330,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1814,
+    "y": 24,
+    "z": -1326,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1810,
+    "y": 24,
+    "z": -1330,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1809,
+    "y": 25,
+    "z": -1340,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1806,
+    "y": 25,
+    "z": -1337,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1793,
+    "y": 27,
+    "z": -1338,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1792,
+    "y": 25,
+    "z": -1346,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1789,
+    "y": 27,
+    "z": -1332,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1778,
+    "y": 28,
+    "z": -1345,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1775,
+    "y": 28,
+    "z": -1349,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1768,
+    "y": 31,
+    "z": -1356,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1763,
+    "y": 32,
+    "z": -1409,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1753,
+    "y": 32,
+    "z": -1399,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1740,
+    "y": 32,
+    "z": -1414,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1736,
+    "y": 32,
+    "z": -1419,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1731,
+    "y": 33,
+    "z": -1452,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1731,
+    "y": 33,
+    "z": -1446,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1728,
+    "y": 33,
+    "z": -1449,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1707,
+    "y": 23,
+    "z": -1165,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1705,
+    "y": 28,
+    "z": -1292,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1703,
+    "y": 23,
+    "z": -1162,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1699,
+    "y": 51,
+    "z": -1346,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1687,
+    "y": 38,
+    "z": -1158,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1683,
+    "y": 38,
+    "z": -1154,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1678,
+    "y": 38,
+    "z": -1145,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1675,
+    "y": 42,
+    "z": -1158,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1671,
+    "y": 42,
+    "z": -1163,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1670,
+    "y": 38,
+    "z": -1149,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1666,
+    "y": 42,
+    "z": -1159,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1666,
+    "y": 38,
+    "z": -1144,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1662,
+    "y": 42,
+    "z": -1163,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1658,
+    "y": 38,
+    "z": -1142,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1650,
+    "y": 36,
+    "z": -1137,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1644,
+    "y": 36,
+    "z": -1140,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1638,
+    "y": 37,
+    "z": -1158,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1637,
+    "y": 37,
+    "z": -1169,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1635,
+    "y": 37,
+    "z": -1197,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1633,
+    "y": 37,
+    "z": -1188,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1633,
+    "y": 37,
+    "z": -1175,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1632,
+    "y": 37,
+    "z": -1200,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1629,
+    "y": 37,
+    "z": -1192,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1629,
+    "y": 37,
+    "z": -1169,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "MAPLE",
+    "level": 110
+  },
+  {
+    "x": -1954,
+    "y": 34,
+    "z": -1508,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1952,
+    "y": 34,
+    "z": -1511,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1941,
+    "y": 50,
+    "z": -1571,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1939,
+    "y": 50,
+    "z": -1569,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1927,
+    "y": 33,
+    "z": -1485,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1923,
+    "y": 33,
+    "z": -1485,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1909,
+    "y": 33,
+    "z": -1491,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1902,
+    "y": 33,
+    "z": -1491,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1887,
+    "y": 33,
+    "z": -1499,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1848,
+    "y": 33,
+    "z": -1507,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1793,
+    "y": 43,
+    "z": -1509,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1752,
+    "y": 24,
+    "z": -1552,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1750,
+    "y": 24,
+    "z": -1554,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1748,
+    "y": 31,
+    "z": -1502,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1737,
+    "y": 68,
+    "z": -1683,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1735,
+    "y": 68,
+    "z": -1681,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1725,
+    "y": 52,
+    "z": -1513,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1706,
+    "y": 90,
+    "z": -1739,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1694,
+    "y": 41,
+    "z": -1523,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1691,
+    "y": 41,
+    "z": -1526,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -1689,
+    "y": 40,
+    "z": -1627,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "OAK",
+    "level": 1
+  },
+  {
+    "x": -2352,
+    "y": 57,
+    "z": -976,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2348,
+    "y": 57,
+    "z": -969,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2345,
+    "y": 57,
+    "z": -979,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2343,
+    "y": 73,
+    "z": -1010,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2343,
+    "y": 57,
+    "z": -974,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2342,
+    "y": 73,
+    "z": -1014,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2341,
+    "y": 57,
+    "z": -967,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2337,
+    "y": 73,
+    "z": -1013,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2337,
+    "y": 73,
+    "z": -1007,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2337,
+    "y": 57,
+    "z": -976,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2335,
+    "y": 64,
+    "z": -1052,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2335,
+    "y": 73,
+    "z": -1018,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2334,
+    "y": 73,
+    "z": -1009,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2332,
+    "y": 64,
+    "z": -1058,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2331,
+    "y": 73,
+    "z": -1014,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2329,
+    "y": 64,
+    "z": -1063,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2324,
+    "y": 64,
+    "z": -1063,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2310,
+    "y": 34,
+    "z": -639,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2306,
+    "y": 34,
+    "z": -638,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2306,
+    "y": 34,
+    "z": -625,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2303,
+    "y": 34,
+    "z": -628,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2302,
+    "y": 34,
+    "z": -635,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2247,
+    "y": 6,
+    "z": -1033,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2245,
+    "y": 6,
+    "z": -1025,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2243,
+    "y": 6,
+    "z": -1029,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2241,
+    "y": 6,
+    "z": -1039,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2240,
+    "y": 6,
+    "z": -1023,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2238,
+    "y": 6,
+    "z": -1034,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2238,
+    "y": 6,
+    "z": -1019,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2236,
+    "y": 6,
+    "z": -1028,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2235,
+    "y": 6,
+    "z": -1041,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2225,
+    "y": 6,
+    "z": -1013,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2223,
+    "y": 11,
+    "z": -1325,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2223,
+    "y": 33,
+    "z": -774,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2221,
+    "y": 6,
+    "z": -1011,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2219,
+    "y": 6,
+    "z": -1005,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2218,
+    "y": 11,
+    "z": -1324,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2218,
+    "y": 33,
+    "z": -774,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2217,
+    "y": 33,
+    "z": -766,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2215,
+    "y": 33,
+    "z": -770,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2214,
+    "y": 11,
+    "z": -1333,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2214,
+    "y": 6,
+    "z": -1009,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2212,
+    "y": 11,
+    "z": -1349,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2210,
+    "y": 33,
+    "z": -776,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2208,
+    "y": 11,
+    "z": -1348,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2203,
+    "y": 87,
+    "z": -1524,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2203,
+    "y": 87,
+    "z": -1521,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2202,
+    "y": 87,
+    "z": -1519,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2200,
+    "y": 87,
+    "z": -1515,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2200,
+    "y": 87,
+    "z": -1510,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2200,
+    "y": 87,
+    "z": -1507,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2199,
+    "y": 87,
+    "z": -1521,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2199,
+    "y": 87,
+    "z": -1512,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2197,
+    "y": 87,
+    "z": -1518,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2197,
+    "y": 87,
+    "z": -1505,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2196,
+    "y": 87,
+    "z": -1515,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2194,
+    "y": 87,
+    "z": -1512,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2194,
+    "y": 87,
+    "z": -1504,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2192,
+    "y": 87,
+    "z": -1510,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2191,
+    "y": 87,
+    "z": -1506,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2189,
+    "y": 87,
+    "z": -1508,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2173,
+    "y": 87,
+    "z": -1514,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2172,
+    "y": 87,
+    "z": -1518,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2171,
+    "y": 87,
+    "z": -1521,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2169,
+    "y": 87,
+    "z": -1513,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2168,
+    "y": 87,
+    "z": -1525,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2166,
+    "y": 87,
+    "z": -1516,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2164,
+    "y": 87,
+    "z": -1525,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2164,
+    "y": 87,
+    "z": -1520,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2146,
+    "y": 11,
+    "z": -1230,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2143,
+    "y": 11,
+    "z": -1227,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2138,
+    "y": 11,
+    "z": -1221,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2137,
+    "y": 78,
+    "z": -1525,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2136,
+    "y": 78,
+    "z": -1528,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2134,
+    "y": 78,
+    "z": -1524,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2134,
+    "y": 11,
+    "z": -1219,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2133,
+    "y": 80,
+    "z": -1510,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2132,
+    "y": 78,
+    "z": -1529,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2131,
+    "y": 80,
+    "z": -1513,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2130,
+    "y": 78,
+    "z": -1525,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2130,
+    "y": 80,
+    "z": -1508,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2129,
+    "y": 78,
+    "z": -1530,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2129,
+    "y": 11,
+    "z": -1213,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2127,
+    "y": 78,
+    "z": -1528,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2123,
+    "y": 11,
+    "z": -1212,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2121,
+    "y": 11,
+    "z": -1208,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2118,
+    "y": 11,
+    "z": -1203,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2118,
+    "y": 11,
+    "z": -1157,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2118,
+    "y": 11,
+    "z": -1153,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2117,
+    "y": 77,
+    "z": -1528,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2115,
+    "y": 77,
+    "z": -1523,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2115,
+    "y": 75,
+    "z": -1489,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2115,
+    "y": 11,
+    "z": -1164,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2114,
+    "y": 77,
+    "z": -1531,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2113,
+    "y": 75,
+    "z": -1493,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2111,
+    "y": 77,
+    "z": -1526,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2111,
+    "y": 75,
+    "z": -1491,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2110,
+    "y": 77,
+    "z": -1532,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2109,
+    "y": 11,
+    "z": -1166,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2107,
+    "y": 77,
+    "z": -1528,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2107,
+    "y": 77,
+    "z": -1524,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2107,
+    "y": 76,
+    "z": -1510,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2107,
+    "y": 76,
+    "z": -1507,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2106,
+    "y": 11,
+    "z": -1175,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2104,
+    "y": 76,
+    "z": -1512,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2104,
+    "y": 76,
+    "z": -1505,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2103,
+    "y": 77,
+    "z": -1530,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2103,
+    "y": 11,
+    "z": -1187,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2102,
+    "y": 77,
+    "z": -1526,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2101,
+    "y": 77,
+    "z": -1529,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2101,
+    "y": 76,
+    "z": -1511,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2101,
+    "y": 11,
+    "z": -1182,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2100,
+    "y": 76,
+    "z": -1507,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2100,
+    "y": 11,
+    "z": -1175,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2062,
+    "y": 41,
+    "z": -1538,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2060,
+    "y": 41,
+    "z": -1546,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2058,
+    "y": 41,
+    "z": -1534,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2054,
+    "y": 41,
+    "z": -1552,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2052,
+    "y": 41,
+    "z": -1542,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2052,
+    "y": 41,
+    "z": -1535,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2011,
+    "y": 21,
+    "z": -590,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2006,
+    "y": 21,
+    "z": -620,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2004,
+    "y": 21,
+    "z": -629,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2004,
+    "y": 21,
+    "z": -625,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2000,
+    "y": 21,
+    "z": -650,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2000,
+    "y": 21,
+    "z": -645,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1997,
+    "y": 21,
+    "z": -570,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1989,
+    "y": 21,
+    "z": -665,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1989,
+    "y": 21,
+    "z": -583,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1987,
+    "y": 21,
+    "z": -689,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1984,
+    "y": 21,
+    "z": -696,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1983,
+    "y": 21,
+    "z": -673,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1982,
+    "y": 21,
+    "z": -691,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1979,
+    "y": 21,
+    "z": -673,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1974,
+    "y": 21,
+    "z": -562,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1785,
+    "y": 22,
+    "z": -1380,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1785,
+    "y": 13,
+    "z": -1188,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1785,
+    "y": 13,
+    "z": -1184,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1784,
+    "y": 22,
+    "z": -1374,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1783,
+    "y": 13,
+    "z": -1183,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1781,
+    "y": 22,
+    "z": -1377,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1779,
+    "y": 13,
+    "z": -1174,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1776,
+    "y": 13,
+    "z": -1172,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1761,
+    "y": 13,
+    "z": -1171,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1751,
+    "y": 13,
+    "z": -1172,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1745,
+    "y": 13,
+    "z": -1170,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1743,
+    "y": 20,
+    "z": -1628,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1742,
+    "y": 20,
+    "z": -1615,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1740,
+    "y": 13,
+    "z": -1167,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1738,
+    "y": 20,
+    "z": -1631,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1736,
+    "y": 20,
+    "z": -1635,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1732,
+    "y": 20,
+    "z": -1642,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1732,
+    "y": 20,
+    "z": -1625,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1732,
+    "y": 20,
+    "z": -1618,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1730,
+    "y": 20,
+    "z": -1635,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1724,
+    "y": 20,
+    "z": -1643,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1724,
+    "y": 20,
+    "z": -1625,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1723,
+    "y": 20,
+    "z": -1636,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1717,
+    "y": 20,
+    "z": -1624,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1713,
+    "y": 20,
+    "z": -1631,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1708,
+    "y": 20,
+    "z": -1647,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1707,
+    "y": 20,
+    "z": -1636,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1706,
+    "y": 20,
+    "z": -1652,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1706,
+    "y": 20,
+    "z": -1644,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1703,
+    "y": 24,
+    "z": -1696,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1697,
+    "y": 20,
+    "z": -1649,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1693,
+    "y": 21,
+    "z": -1685,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1690,
+    "y": 23,
+    "z": -1700,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1678,
+    "y": 26,
+    "z": -1712,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1676,
+    "y": 23,
+    "z": -1682,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1674,
+    "y": 26,
+    "z": -1710,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1673,
+    "y": 23,
+    "z": -1680,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -1669,
+    "y": 22,
+    "z": -1695,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "STURGEON",
+    "level": 110
+  },
+  {
+    "x": -2206,
+    "y": 35,
+    "z": -847,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2203,
+    "y": 35,
+    "z": -849,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2202,
+    "y": 33,
+    "z": -843,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2201,
+    "y": 35,
+    "z": -842,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2196,
+    "y": 31,
+    "z": -833,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2195,
+    "y": 31,
+    "z": -837,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2195,
+    "y": 30,
+    "z": -831,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2192,
+    "y": 31,
+    "z": -836,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2108,
+    "y": 16,
+    "z": -1296,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2104,
+    "y": 16,
+    "z": -1299,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2101,
+    "y": 14,
+    "z": -1301,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2098,
+    "y": 15,
+    "z": -1304,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2095,
+    "y": 14,
+    "z": -1307,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1984,
+    "y": 32,
+    "z": -1482,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1981,
+    "y": 33,
+    "z": -1490,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1980,
+    "y": 33,
+    "z": -1496,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1979,
+    "y": 31,
+    "z": -1491,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1978,
+    "y": 32,
+    "z": -1500,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1977,
+    "y": 37,
+    "z": -1496,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1975,
+    "y": 36,
+    "z": -1504,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1974,
+    "y": 35,
+    "z": -1509,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1971,
+    "y": 39,
+    "z": -1511,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1969,
+    "y": 36,
+    "z": -1514,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1969,
+    "y": 32,
+    "z": -611,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1966,
+    "y": 35,
+    "z": -1502,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1966,
+    "y": 12,
+    "z": -1350,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1966,
+    "y": 31,
+    "z": -612,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1966,
+    "y": 32,
+    "z": -605,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1963,
+    "y": 16,
+    "z": -1350,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1963,
+    "y": 33,
+    "z": -611,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1961,
+    "y": 33,
+    "z": -612,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1960,
+    "y": 12,
+    "z": -1354,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1959,
+    "y": 31,
+    "z": -607,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1957,
+    "y": 32,
+    "z": -606,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1956,
+    "y": 13,
+    "z": -1354,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1953,
+    "y": 16,
+    "z": -1355,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1831,
+    "y": 27,
+    "z": -1323,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1830,
+    "y": 27,
+    "z": -1327,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1828,
+    "y": 24,
+    "z": -1329,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1826,
+    "y": 19,
+    "z": -1318,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1822,
+    "y": 19,
+    "z": -1320,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1820,
+    "y": 25,
+    "z": -1329,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1819,
+    "y": 20,
+    "z": -1323,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1816,
+    "y": 21,
+    "z": -1321,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1814,
+    "y": 24,
+    "z": -1323,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1813,
+    "y": 27,
+    "z": -1322,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1812,
+    "y": 25,
+    "z": -1320,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1770,
+    "y": 32,
+    "z": -1656,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1767,
+    "y": 33,
+    "z": -1652,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1766,
+    "y": 40,
+    "z": -1659,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1765,
+    "y": 36,
+    "z": -1653,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1759,
+    "y": 29,
+    "z": -1662,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1756,
+    "y": 35,
+    "z": -1663,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1754,
+    "y": 38,
+    "z": -1664,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1752,
+    "y": 36,
+    "z": -1665,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1750,
+    "y": 37,
+    "z": -1661,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1748,
+    "y": 37,
+    "z": -1659,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1724,
+    "y": 34,
+    "z": -1463,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1723,
+    "y": 35,
+    "z": -1461,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1721,
+    "y": 40,
+    "z": -1455,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1720,
+    "y": 36,
+    "z": -1458,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1719,
+    "y": 33,
+    "z": -1458,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1718,
+    "y": 35,
+    "z": -1456,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1718,
+    "y": 37,
+    "z": -1447,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1717,
+    "y": 37,
+    "z": -1450,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1716,
+    "y": 35,
+    "z": -1453,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1663,
+    "y": 38,
+    "z": -1157,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1660,
+    "y": 38,
+    "z": -1161,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1659,
+    "y": 37,
+    "z": -1153,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1659,
+    "y": 38,
+    "z": -1151,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1657,
+    "y": 39,
+    "z": -1165,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1649,
+    "y": 40,
+    "z": -1166,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1649,
+    "y": 37,
+    "z": -1164,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1649,
+    "y": 36,
+    "z": -1159,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1649,
+    "y": 36,
+    "z": -1155,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -1647,
+    "y": 39,
+    "z": -1158,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "TITANIUM",
+    "level": 110
+  },
+  {
+    "x": -2098,
+    "y": 38,
+    "z": -742,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "WHEAT",
+    "level": 1
+  },
+  {
+    "x": -2091,
+    "y": 36,
+    "z": -739,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "WHEAT",
+    "level": 1
+  },
+  {
+    "x": -2074,
+    "y": 40,
+    "z": -746,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "WHEAT",
+    "level": 1
+  },
+  {
+    "x": -2071,
+    "y": 40,
+    "z": -750,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "WHEAT",
+    "level": 1
+  },
+  {
+    "x": -2066,
+    "y": 42,
+    "z": -757,
+    "angle": 0,
+    "type": "NODE",
+    "resource": "WHEAT",
+    "level": 1
+  }
+]

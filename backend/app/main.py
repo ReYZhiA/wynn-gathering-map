@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import gathering_nodes, health, node_clusters, territories
+from app.api.routes import dev_gathering_nodes, gathering_nodes, health, node_clusters, territories
 from app.core.config import get_settings
 
 
@@ -22,6 +22,7 @@ def create_app() -> FastAPI:
     app.include_router(gathering_nodes.router, prefix="/api")
     app.include_router(territories.router, prefix="/api")
     app.include_router(node_clusters.router, prefix="/api")
+    app.include_router(dev_gathering_nodes.router, prefix="/api")
 
     @app.get("/")
     async def root() -> dict[str, object]:

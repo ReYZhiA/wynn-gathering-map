@@ -16,6 +16,8 @@ const WOOD_RESOURCES = new Set([
   "SKY",
   "MAPLE",
   "REDWOOD",
+  "DERNIC_TREE",
+  "DERNIC_WOOD",
 ]);
 
 const ORE_RESOURCES = new Set([
@@ -30,6 +32,9 @@ const ORE_RESOURCES = new Set([
   "DIAMOND",
   "VOIDSTONE",
   "DERNIC",
+  "DERNIC_ORE",
+  "MOLTEN",
+  "MOLTEN_EEL",
   "TITANIUM",
   "CINNABAR",
 ]);
@@ -50,6 +55,8 @@ const CROP_RESOURCES = new Set([
   "HEMP",
   "JUTE",
   "HEATHER",
+  "DERNIC_CROPS",
+  "DERNIC_CROP",
 ]);
 
 const FISH_RESOURCES = new Set([
@@ -63,11 +70,11 @@ const FISH_RESOURCES = new Set([
   "GYLIA",
   "GYLIA_FISH",
   "BASS",
-  "MOLTEN",
   "SUNFISH",
   "STARFISH",
   "STURGEON",
   "MAHSEER",
+  "DERNIC_FISH",
 ]);
 
 export function getGatheringProfession(resource: string): GatheringProfession {

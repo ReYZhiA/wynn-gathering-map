@@ -24,6 +24,30 @@ export function GatheringNodeTooltip({ node, position }: GatheringNodeTooltipPro
         <dd>{node.territory ?? "None"}</dd>
         <dt>Cluster</dt>
         <dd>{node.cluster_id ?? "None"}</dd>
+        {node.devComparisonStatus ? (
+          <>
+            <dt>Dev status</dt>
+            <dd>{formatDevStatus(node)}</dd>
+          </>
+        ) : null}
+        {node.devEdited && node.devOriginalResource ? (
+          <>
+            <dt>Original</dt>
+            <dd>{node.devOriginalResource}</dd>
+          </>
+        ) : null}
+        {node.devScanSource ? (
+          <>
+            <dt>Scan</dt>
+            <dd>{node.devScanSource}</dd>
+          </>
+        ) : null}
+        {node.devMatchDistance !== undefined && node.devMatchDistance !== null ? (
+          <>
+            <dt>Match distance</dt>
+            <dd>{Math.round(node.devMatchDistance * 10) / 10}</dd>
+          </>
+        ) : null}
         <dt>Position</dt>
         <dd>
           {node.x}, {node.y}, {node.z}
@@ -33,4 +57,12 @@ export function GatheringNodeTooltip({ node, position }: GatheringNodeTooltipPro
       </dl>
     </div>
   );
+}
+
+function formatDevStatus(node: GatheringNode): string {
+  if (node.devSource === "scan" && node.devComparisonStatus === "new") return "New scanned node";
+  if (node.devSource === "scan" && node.devComparisonStatus === "matched") return "Scanned match";
+  if (node.devComparisonStatus === "outdated") return "Outdated API node";
+  if (node.devComparisonStatus === "matched") return "API match";
+  return "Unchanged";
 }

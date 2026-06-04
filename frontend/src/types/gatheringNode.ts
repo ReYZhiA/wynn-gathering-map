@@ -11,12 +11,19 @@ export type GatheringNode = {
   level: number;
   territory: string | null;
   cluster_id: number | null;
+  devId?: string;
+  devSource?: "api" | "scan";
+  devScanSource?: string;
+  devComparisonStatus?: "base" | "matched" | "new" | "outdated";
+  devMatchDistance?: number | null;
+  devOriginalResource?: string;
+  devEdited?: boolean;
 };
 
 export type GatheringNodesResponse = {
   data: GatheringNode[];
   meta: {
-    source: "wynncraft";
+    source: "wynncraft" | "edited";
     cached: boolean;
     count: number;
     cacheTtlSeconds: number;
